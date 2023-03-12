@@ -27,8 +27,25 @@ export type List = {
   parties: Party[];
 };
 
+export type Results = {
+  id: string;
+  district: string;
+  census: number;
+  participation: number;
+  abstention: number;
+  valids: number;
+  lists: {
+    listId: string;
+    votes: number;
+  }[];
+  blanks: number;
+  nulls: number;
+  lastModified: Date;
+};
+
 /* SERVICE INTERFACES */
 export type ElectionsService = {
   getParties: () => Promise<Party[]>;
   getLists: () => Promise<List[]>;
+  getResults: () => Promise<Results[]>;
 };

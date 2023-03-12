@@ -23,3 +23,11 @@ export const indexate = <
     acc[item[attr]] = item;
     return acc;
   }, {} as Record<T[K], T>);
+
+export const sum = <T extends Record<string, any>>(
+  items: T[],
+  adder: AttributesOfType<T, number> | ((item: T, i: number) => number),
+) => items.reduce((acc, item, i) => {
+    const value = typeof adder === 'function' ? adder(item, i) : item[adder];
+    return acc + value;
+  }, 0);

@@ -1,0 +1,244 @@
+[
+  {
+    "_id": "rec1n6tl2K8JBVy40",
+    "_created": "2023-03-02T14:38:57.000Z",
+    "lists": [
+      {
+        "_id": "recuZj5NleyPBOwFS",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 180
+      }
+    ],
+    "blanks": 342,
+    "census": 1003,
+    "participation": 634,
+    "nulls": 112,
+    "district": "1_CAN",
+    "abstention": 369,
+    "last_modified": "2023-03-12T18:32:36.000Z",
+    "valids": 180
+  },
+  {
+    "_id": "rec5KQgVvTzzK9PDa",
+    "_created": "2023-03-02T14:42:00.000Z",
+    "lists": [
+      {
+        "_id": "recGm4C2yrXdjticw",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 523
+      },
+      {
+        "_id": "recGgPJ0EcbtyT9k1",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 874
+      },
+      {
+        "_id": "recslIrVrRRx8AuDM",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 673
+      },
+      {
+        "_id": "recbodeJQrjUPKiNU",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 923
+      }
+    ],
+    "blanks": 450,
+    "census": 4029,
+    "participation": 3623,
+    "nulls": 180,
+    "district": "6_SJL",
+    "abstention": 406,
+    "last_modified": "2023-03-12T18:45:20.000Z",
+    "valids": 2993
+  },
+  {
+    "_id": "recKIMYVZMkSdaO0s",
+    "_created": "2023-02-09T10:44:01.000Z",
+    "lists": [
+      {
+        "_id": "recq1huYYFiVSUvlO",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1272
+      },
+      {
+        "_id": "recx8UlOslG8DMFjd",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1028
+      }
+    ],
+    "blanks": 612,
+    "census": 3928,
+    "participation": 3120,
+    "nulls": 208,
+    "district": "2_ENC",
+    "abstention": 808,
+    "last_modified": "2023-03-12T18:36:44.000Z",
+    "valids": 2300
+  },
+  {
+    "_id": "recO7jJW1FJdF4HSW",
+    "_created": "2023-03-02T14:41:36.000Z",
+    "lists": [
+      {
+        "_id": "rec29GlXXkvxB78kF",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 945
+      },
+      {
+        "_id": "recPW2138OYL6kckJ",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 723
+      },
+      {
+        "_id": "rectdl10pE4GfFAYk",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 435
+      }
+    ],
+    "blanks": 355,
+    "census": 3067,
+    "participation": 2564,
+    "nulls": 106,
+    "district": "4_LM",
+    "abstention": 503,
+    "last_modified": "2023-03-12T18:41:08.000Z",
+    "valids": 2103
+  },
+  {
+    "_id": "recUWjC340R8JVvPi",
+    "_created": "2023-02-17T14:20:29.000Z",
+    "lists": [
+      {
+        "_id": "recJeO0Mu4TSk8SPf",
+        "_created": "2023-03-02T15:02:06.000Z",
+        "votes": 6248
+      },
+      {
+        "_id": "recX9CRRFH9yLkBFR",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 5445
+      },
+      {
+        "_id": "reckf2p3g2kcsJ4IZ",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 2219
+      },
+      {
+        "_id": "reca2Qzjta3qg5qkG",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1044
+      },
+      {
+        "_id": "recVi8I4tKcOL195J",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 980
+      },
+      {
+        "_id": "recJFqscvqla4hWmn",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1154
+      }
+    ],
+    "census": 27278,
+    "participation": 20412,
+    "nulls": 800,
+    "district": "0_NACIONAL",
+    "abstention": 6866,
+    "last_modified": "2023-03-12T18:31:13.000Z",
+    "valids": 17090,
+    "blanks": 2522
+  },
+  {
+    "_id": "reciwdMIR1vmv96V3",
+    "_created": "2023-03-02T14:42:07.000Z",
+    "lists": [
+      {
+        "_id": "recUvJudzNRNFgSRm",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 923
+      },
+      {
+        "_id": "rec5ndckdwnntcKcn",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1021
+      },
+      {
+        "_id": "rec0VLpjPRW2yDCw4",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 723
+      }
+    ],
+    "blanks": 876,
+    "census": 5401,
+    "participation": 3543,
+    "nulls": 0,
+    "district": "7_EE",
+    "abstention": 1858,
+    "last_modified": "2023-03-12T18:46:52.000Z",
+    "valids": 2667
+  },
+  {
+    "_id": "recmS2Mc9JaQLVZnq",
+    "_created": "2023-03-02T14:41:43.000Z",
+    "lists": [
+      {
+        "_id": "recEQMEpV19eTugiY",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1783
+      },
+      {
+        "_id": "recJe7rA61BCrgSaa",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 1792
+      },
+      {
+        "_id": "recBqazmfwovNXE0l",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 832
+      },
+      {
+        "_id": "recOsly6lLoKoBbEr",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 126
+      }
+    ],
+    "blanks": 623,
+    "census": 8097,
+    "participation": 5230,
+    "nulls": 74,
+    "district": "5_ALV",
+    "abstention": 2867,
+    "last_modified": "2023-03-12T18:43:37.000Z",
+    "valids": 4533
+  },
+  {
+    "_id": "recx9mgus913mGRah",
+    "_created": "2023-03-02T14:39:47.000Z",
+    "lists": [
+      {
+        "_id": "recpZRAwTHN56Sno1",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 562
+      },
+      {
+        "_id": "reciZPMzJRNPWFtkm",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 134
+      },
+      {
+        "_id": "recUpCyxtyCeBen2H",
+        "_created": "2023-03-02T15:02:09.000Z",
+        "votes": 285
+      }
+    ],
+    "blanks": 53,
+    "census": 1573,
+    "participation": 1034,
+    "nulls": 0,
+    "district": "3_ORD",
+    "abstention": 539,
+    "last_modified": "2023-03-12T18:38:15.000Z",
+    "valids": 981
+  }
+]

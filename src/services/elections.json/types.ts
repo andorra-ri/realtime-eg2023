@@ -48,3 +48,20 @@ export type ListDTO = {
   district: string[];
 };
 
+export type ResultsDTO = {
+  _id: RecordId;
+  _created: string;
+  lists: {
+    _id: RecordId;
+    _created: string;
+    votes: number;
+  }[];
+  blanks: number;
+  census: number;
+  participation: number;
+  nulls: number;
+  district: string;
+  abstention: number;
+  last_modified: string;
+  valids: number;
+};

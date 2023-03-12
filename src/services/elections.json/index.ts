@@ -1,6 +1,6 @@
 import { indexate } from '/@/utils';
-import type { ElectionsService, Party, List } from '/@/types';
-import type { PartyDTO, ListDTO, AttachmentDTO } from './types';
+import type { ElectionsService, Party, List, Results } from '/@/types';
+import type { PartyDTO, ListDTO, AttachmentDTO, ResultsDTO } from './types';
 
 const UrlFromAttachment = (
   attachments: AttachmentDTO[] | undefined,
@@ -46,6 +46,19 @@ const getLists = async (): Promise<List[]> => {
   });
 };
 
-const service: ElectionsService = { getParties, getLists };
+const getResults = async (): Promise<Results[]> => {
+  const response = await fetch('/mock/results.json');
+  const results: ResultsDTO[] = await response.json();
+
+  return results.map(result => {
+    const { _id: id, _created, last_modified: last, ...rest } = result;
+    const lastModified = new Date(last);
+    const [, district] = result.district.split('_');
+    const lists = result.lists.map(({ _id: listId, votes }) => ({ listId, votes }));
+    return { ...rest, id, district, lists, lastModified };
+  });
+};
+
+const service: ElectionsService = { getParties, getLists, getResults };
 
 export default service;
