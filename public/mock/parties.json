@@ -1,0 +1,386 @@
+[{
+  "_id": "rec1RrMJClYW10Ysk",
+  "_created": "2023-02-10T22:47:55.000Z",
+  "logo": [
+    {
+      "id": "attfwxW40LD56g8ER",
+      "width": 150,
+      "height": 150,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/oDS1f2pTwqYV8fUJJ0SNtQ/_-YOEeygogbY_m7c3PXY8zgMXtdo8Raau0aQzKK6avA6gB5hmC4pBMrCFxs8ieY860eIOOABZAejjzVE1mdSmg/u8vnLt7MANQdw_NYQIhFXnghcB9WjNykJWvX784XZJQ",
+      "filename": "logo.png",
+      "size": 5028,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/g_j6kXjAmVvT0u7mMkFX0g/XY9HBAOopVfTQeVF-0OYUEW8jwnXHwX7FytUHC2iS2tFJErHeoCv78GNYFMEJFplhhb4BqkoZkk3C4znCRLaQQ/RQV1CBBf8pf2L25p12fv9F5UC_w_B77Cj0lL0WtXNl4",
+          "width": 36,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/i5P9C1RzAp3Qi24YhpJnLw/6xd73xNt_MeTCvBFIKUv3FyNc6WlBnUNeALNdhKaKl9BSXHeQsVoeVmAZRwD69ctbzMQghEhFDd_8yln-yVotQ/tbmB61mhU03BnzFWPXlwCNZPx7X2re7RmXXsLpkBcFU",
+          "width": 150,
+          "height": 150
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/6cpPJU1w_iuV3jMjWU4Kmw/bsxJ67uJgGoGWWjITn405BFO0Ds-lOQlT9tq6O7Hbe5vOH1G8u6_0XevK6Rxw8q7ZDCovopW4uH2UX0M2HEPHw/LgaGLzyVyFVkcJqGz2mXtZBsPr9ZMEQrESV1EwsZ6ao",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#4d7397",
+  "order": 10,
+  "name": "Andorra Endavant",
+  "reach": "NATIONAL"
+},
+{
+  "_id": "rec4zWgzN41xMZak8",
+  "_created": "2023-03-02T14:44:06.000Z",
+  "logo": [
+    {
+      "id": "att0xnuN2m86sja4W",
+      "width": 586,
+      "height": 250,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/UgnL8z2Z45t8smF7I-vlSA/pl3t9nwN2fWC2Oe5bIObEXX_16KYTstnuz40NZlAK4FoeDVxcrnF4Qu0FmNRvLwX0Ohw6kzFeZM6D_Jd-Rr4grDRVI69yz1shWfBfzLVHdJgm0vYDRQV5r7wahSk6b0l/EQsl17ZoYKzRaJEbrNFKw3q0YElszR3iXi7q95JSGtg",
+      "filename": "ORD_PS-removebg-preview.png",
+      "size": 55844,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/7gWlTG18ewXoDico-2IFkQ/wvV6zlc-_mhtObIk5vsXW0-Cd_vX9hHp2UkTVobG3X-W45Onh4yj5NHxbs6BSqTOVPZa_wZ7YfPAa-cwZzfFHA/g6swX7Q4MdDKuuNbgk_m94GdyRB2NgmUe8Lpg-YFMmo",
+          "width": 84,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/FlOjzf7S70NX4R4ew5pPPA/cwP6yS1jh-UmoAdZ2bILbnR5X8DkIqQIyM-g4u7wndCaee8syLnFNBMk4S4YKWS595P_Ts6VHqIsVagoXEgYtw/VSZu0kmugkdUUXUZXrQZe7lUEhr8xkePwDnnFOedSBQ",
+          "width": 586,
+          "height": 250
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/Xj1WHQTHp5vcmtonvAnWXA/TvmjML42dKiDLwSOjPb21mP60yrSDIaFsC5z_ZxCCH1ptWSmx_UfxHpSkzFFXGG-X0UqV1GQlyjz_NRojbRREQ/B-eUMQ-9_y1VqSE23EJfeHYxU5BNkofF39DjJcAdkqA",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#000000",
+  "order": 4,
+  "name": "Per Ordino",
+  "reach": "LOCAL",
+  "groups": [
+    "LEFT"
+  ]
+},
+{
+  "_id": "rec9FQSARgIp0kszW",
+  "_created": "2023-02-09T10:34:30.000Z",
+  "logo": [
+    {
+      "id": "attuMJxSZbtTNq9vu",
+      "width": 612,
+      "height": 408,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/TUCz6Yb0_i_E5M5539dtcg/-Uf9gGGv45vE8xOuWYcUd2Eec8SFEQyZ0EC-HCeu2J9_-Ak-txt6knnyiJpxveoN_DcQyANX8dP4d7yTN2uMGKLh_QsVqjo2LadR4Eg9vHtIlHfokiCF_O4b53qh_TzY/_m56wcgCwbFQbuzD_MuR5XU0DDIzLR7KiejXBjqFq74",
+      "filename": "1_logo_color-1-removebg-preview.png",
+      "size": 30360,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/p0cJ0WzttHwfUmAcZ2knUw/rzD-2oW0Qp9z-7ajNyFKskCCo5iOfCMZlw10y3eGwHAMFsjLKrMF6elIdG-u119_NKIKJfln7K95bOjn5m6Log/ECpNeOdrn9RTgQbG9h9kg-XuFgUUsZwHAmnvNtJJ7R8",
+          "width": 54,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/OIW-5yiWxwBRNhGlW_8CEw/2_mzEqj1yohJOLdgGe-2bdqcVvzHCaiVOX94qpBLtcYFrfsndjA5iAnD_gsukJ4DGibwB0OsH3JeLHinRgH_gQ/RKpyuvjr-U3b3EKZoH3OOvbnGy8QwNLBmDdq0GPEB0Q",
+          "width": 612,
+          "height": 408
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/kx99iGBOazzUDmuZjH_tFw/2W6yKuTP5QQWrzc8r9d_LUWlsC9O-SEJTcEPPYcTMFfLGy74MH6jptpuv7SldBr6dpNQnqW0Fuk4Tkr57eDOJg/36YSLCXvQW-PySaXq9whXTiN5yDNDF_eT7m-ihjXxPQ",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#a32086",
+  "order": 2,
+  "name": "Progressistes SDP",
+  "reach": "NATIONAL",
+  "groups": [
+    "LEFT"
+  ],
+  "coalition_leader": ["recoUh1nGSEpi8li7"]
+},
+{
+  "_id": "recCQIQWW0bOVuttp",
+  "_created": "2023-02-09T10:27:03.000Z",
+  "logo": [
+    {
+      "id": "attAutzuGFkN9J92f",
+      "width": 364,
+      "height": 126,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/-tr0F8zgOxZQxJG-P0w8jw/sPAS3Qw-szW3IJm5UtZKTYGCaq0UpIcc-kEdN2_jo--_dr7QoksCbup2_RvJ8R1KxXH0vFMcz2FDwQx7JizRBrIZPNhl252sJANlIjWSBLY/9xCwHyr1udOnja-V9xRQqfD5bzPWfT6LZQHwfktG9F0",
+      "filename": "Acc!ó",
+      "size": 6127,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/X9HgB4kW9sj4euq-ebQcrg/gytm2Iwjt5PobZf7wQbpg6n5xSYS_3wrDjAUvuAUWvXWX5FjSo1DYXnN7cr36c6JPpigwYFJYOuOUVNZ3fkmgQ/SrQiZeC3mJLVcNtNiPsaoXho0Hmnnmto9opVoQ-lHLI",
+          "width": 104,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/V32gMfcmZY5p4ndaCjoLtg/aY-uNR1hVNcnW21gAgmWi46AcGfFQBmiI5a0bUx_U0aEJIL5k6YEi-ezVzBLzZw-RgYV3pfKxLi_iHWDdsVIOA/xYWM1KVRS0_1qO6sQgvUJI8ljqYWR0wYij3UWlSa36k",
+          "width": 364,
+          "height": 126
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/9xOcs87VsPxxFj4Rkw_IVQ/sAi9pXxwnwJ4OnNaJKGW3Gn2a--CjxKoS1XHDl7d9oNugOl_2-sACWjzs_AYDMsuUJpiEf8kEe6qQJIYVS_1ag/dumLUoJFqcK6BRZzEP4Be8BwNDEesdbxW5r6yNKQgc8",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#72c0c0",
+  "order": 6,
+  "name": "Acció",
+  "reach": "NATIONAL",
+  "groups": [
+    "RIGHT"
+  ]
+},
+{
+  "_id": "recHkhWnZYQ6awTa2",
+  "_created": "2023-03-02T14:44:06.000Z",
+  "logo": [
+    {
+      "id": "attU0OGMN4v4c6vQl",
+      "width": 346,
+      "height": 85,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/W7OsUI_zU7vldnxBJn3gzQ/iNPNUKzbYHBqFIunTC0wohzWR8b5IXmqCGFs0zn8OFAu-0T3nztDvIaDXkjLlfaR7_OlkLtVoSeVS4L7sHUt5XVaBHSL-9pIONzuKU4seEV09fbGi6UoxwPJXPNq8L7R/MIGB5hwaOe6a9degBlkhjMk7fAVKidtW9KG2O1vJPas",
+      "filename": "Agrupament Encampadà",
+      "size": 31141,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/2PnVJ-PbPW020494Sv3Uxg/JCSL6-ARUZSAIYeRYyV-Ef3D87_4nbbqGyLW01LB3qCIl_lk9TJsz16NBJC3DgAyU_ufNpETyXeniWULkZ-IEQ/ahY4Kb5BeeuIOrfK5uETex07eA7KlI_0SCeytWO4a7g",
+          "width": 147,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/xEjzBu6uZrrxYzYhF125gw/sGSpnTYadz6h8CdOaDfpB8__xdWpwyO6-rFVR4XNuzUmfDTtCKnlf2UwYGhYATkTN_cOsa9h9bIdnrGoSzy0mA/bsQIPe3jA3m6ZZ33uTiq7I_Vvhq3FsWq5syi_z4nU_A",
+          "width": 346,
+          "height": 85
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/K1AYrP0l44xwyDruDEOhag/EEt_PQYduuaxggFU9nIKZNCU3AGmJfrVHUwIkKGk8O7bPhtYnjMWjUE7yQYVjzwem8CTRUitPK_qMAnCnTr2cg/dtRJIEudwz-SK-zcntGLC_opmDy5tm6b6NXjq1NTF3I",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#007079",
+  "order": 3,
+  "name": "Agrupament Encampadà",
+  "reach": "LOCAL",
+  "groups": [
+    "LEFT"
+  ]
+},
+{
+  "_id": "rech48CVJoc7qCJX3",
+  "_created": "2023-02-02T13:55:38.000Z",
+  "logo": [
+    {
+      "id": "attF2OmERZGt98CVu",
+      "width": 1475,
+      "height": 422,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/_x50hpUiz3IhghUbZtQjpA/KKqChgpns_MWUQMx1CZkipmDRuwE6ddyWh9wNksQqyKMw26OQZ6PNvSO2rSoFmoKKpM2YveCR3vC3r2rHzcBNytmYdByIVcegn_bK1-aVkI/ozAXaJsO_B3Z2vGZKhf6ooN8zbdMPYNIuz6DYxFLkUo",
+      "filename": "liberals-2022.png",
+      "size": 23153,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/J74W2QyMzhYFEuXMtNKe4g/a_Sf7euZbNmGD5amXb7Ufi88wZHCAb-tWtHQwc0397OY24LZgWXZGoTcN9u_2FVyrPhzsfx-H28vaEu5JKhV4g/3KHOpFWXc7na0vsdpVyVzEDoOgU9Q64PQnVLWtS-QSg",
+          "width": 126,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/U4dXaZHqOnpGYT0S38ad7g/vmC9yXJGnXrOrSwLcX2HLoRP6EX1AkRdOcNheUyQ2j6uUWEYk6I5PPlbJKS5e05IzPOBs2aNx9ybCoSVF92d1g/62tEb5heXpqFkPwzzi6R1I8eIBtOsRB6meuBSBQF6Wo",
+          "width": 1475,
+          "height": 422
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/UW2s5XbL0UWePk_pIW2cmw/ILnR4bqPy68FBvu2qUz_8XvHCde2iqr-g-Okr_7HoXJ5xNSWIaQ9Is4m0Hh_brEuj96lkET8sc4kMo25PjilAw/gAuJcodoEDRXVdU60RcvWFCe-Dp2j4zAZveUJy0ef_E",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#009dc5",
+  "order": 7,
+  "name": "Liberals d'Andorra",
+  "reach": "NATIONAL",
+  "groups": [
+    "RIGHT"
+  ]
+},
+{
+  "_id": "recjBGz6vXs99ZSGh",
+  "_created": "2023-02-09T10:16:40.000Z",
+  "logo": [
+    {
+      "id": "att1mrHEcVxgoQi1I",
+      "width": 499,
+      "height": 500,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/bsumDRz-fA5DoD9pwoEHZA/xCmRA7MbOuiwNlhCWB0uWecJo-m3w9vv3L1ZK69FEtPB9vDV2P0mR6aPZxCFqJNlhsrbWC5MPzuURiNniIXB5hruua6QfAThEOX60G15QZE/BbyQROcZPs3XYv-TnRQ8c3uqvSzq-bju-rwIkvbR7WM",
+      "filename": "Concòrdia",
+      "size": 100847,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/oH0HfBJXXpn2hax2kv-WyA/xmmZW3eRHySYJeDICLPOCz9Rdrwm9rsXxHlMtRqwrlTdKHKqaGWeGcJ14OHS7VMXYinUuJMZ845QO1ph-0RrPA/zek8EVxxYQH9dI-Vlh08FmIFMzp8JGfaVSVPqMSAIto",
+          "width": 36,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/suDzAQoBPXk6wFw_XVGYQA/m6UjqVYuixz26XYX05fivc67Fv3HDUmFE1OAOABM11mcMol65y2YnnfCOZ7c2k9eXutprjapgbp8IhNaIIFXcw/zTOX82y0S2qxhkuDXswF6rU3DP1MR2P3Y_GelmabgHo",
+          "width": 499,
+          "height": 500
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/y4Bj50wjkcSN6ej_wfnN3g/F7MMHGvblANSfS7wSj_h6LNhBqogxQmxvUVmHnLVvbDgdI9tKjO9B_LWGyubU_AJm4KRY-Hdt5KdFmbW8JLpiA/dztPj1TqAI2Z0XxrKTEHOxOj0SU63I3PcWDhoJ1LsfI",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#99b4bf",
+  "order": 5,
+  "name": "Concordia",
+  "reach": "NATIONAL"
+},
+{
+  "_id": "reckiXbAVBIgZzh71",
+  "_created": "2023-02-02T13:55:38.000Z",
+  "logo": [
+    {
+      "id": "att3pmsrjVAn3PYvy",
+      "width": 3122,
+      "height": 868,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/J4poJXm_XdO9WDEJuGutfA/oFlO7mkDP0CZnLTllAANLapXLC1ZLnz-fnZWPKMS-biR1GiYIBbINKlyKAv0xUgRQcF1zb7h_B5xNX_bq5KQEY4qFPjSqhZz7uklO1ml09eIxWYhu7nXpFHbKYstBney/aaaBonPOjBvZHjFqyFskt_T_FK4BEKGKu089UdEYNFU",
+      "filename": "Demòcrates Andorra",
+      "size": 25798,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/cLKcOOjle_Ok2WlcU6yRrA/nFp1SiadZGO1k6yVR1OD4FERqj-1W2UC0au098tWtYnV7FgUlGCW__NOyKGNZf2LbPGkMdJV2LWR7Rzm61SswA/ZUUVksOn4J12CdRg02nFtfwGpEqbGs2rxuGJht6Jb5U",
+          "width": 129,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/FdZao5I2PVWycSdAyhzXyQ/Ns_WgJj6pnVDA4kRJFGIOUIjEjpgWzZOypy-6NOdfF57fU_yXzzM61DmjgPCTsa9clQVYD1qAQ6vjwh9d5faow/3Tb_TxX_FkRhcCTOWAa8DDw4-OXI2xD-XLvnBuykNDw",
+          "width": 1842,
+          "height": 512
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/SYXspDs5jXBvbEAygYfXIA/eb8nWFd0-8mmUWwh7e8pyOrWovdrbqo_icb2wgoYuSitjDEswAYAJ-6Pe6CZ86T9g84WG23AWvAv4_yQ5h_Pdg/zeRu_pRt2NRtOgZO9bEYu9cXSnEKea3zguJAcDBil4M",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#f08108",
+  "order": 9,
+  "name": "Demòcrates per Andorra",
+  "reach": "NATIONAL",
+  "groups": [
+    "RIGHT"
+  ]
+},
+{
+  "_id": "recnHJwuHoAbWqbzk",
+  "_created": "2023-03-02T14:44:06.000Z",
+  "logo": [
+    {
+      "id": "attKzCvG6Tr1JVDgA",
+      "width": 482,
+      "height": 134,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/wHbH-VY3hTzzbItrX9O1Cw/cUYCpsmSU1yQkoNF37pG9sdkHCQMIH6X42OV1CWsqpF1GRndzOrCB2EjOEzeV1u0zSlRsOT_TQy86Ji0YJUdTtETQMIbYFtMQUMgJ3WnTgrOdOk8xbxdY1KS7MEhEcjI/kSs-S8MRMLfiRo8ztohl_YFeAtnp0PNkgOFjpZchraM",
+      "filename": "logo-retina-ciutadans-compromesos.png",
+      "size": 16297,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/9mY4gEbhKYE3XaOnS6n1pQ/8HpT_NrLLG5OBiCqXLV3abH8jfLtMo-lDRzibO5_dmHhJd9eAIo7sekHAiLYBZORHI-yP9P3ZMNydyjAy7ZGFQ/rx_YNJ1n0SlZG9m7fdKmtB2dXzbjvZx7mycz5j5IH0c",
+          "width": 129,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/lhcbMclNetmrNxaz0y-mkQ/0g_2HJts_lDTW8qDvBLcoQVuEZWX9cz-WTF9sDV42IDPT5sE5mr29oFnJNNyxRJ885WHed1ff3MyqBbL8UoOAA/TAs5Ue-Bcp5sYchDWgTFPC8VZLDr9uINvC9DHp8Jlog",
+          "width": 482,
+          "height": 134
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/Q8zVjsqu-dZrL3Uc_hcYzg/BDJlWUfOv_9HZXhwB7k7ZByCwkqdd1zA42GfY0KajirBLY9Su2uQ9-7Mh6BNknGw4NwJGCCCmVIjFyxms0P5Cw/K3qN9COWSRPGC1zMIwKdU3eJlrbomtIQRq8gZFpfFys",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#57287e",
+  "order": 8,
+  "name": "Ciutadans Compromesos",
+  "reach": "LOCAL",
+  "groups": [
+    "RIGHT"
+  ],
+  "coalition_leader": ["reckiXbAVBIgZzh71"]
+},
+{
+  "_id": "recoUh1nGSEpi8li7",
+  "_created": "2023-02-02T13:55:38.000Z",
+  "logo": [
+    {
+      "id": "attWeMCnGYwdpLOCv",
+      "width": 150,
+      "height": 71,
+      "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/z_77OXvlZ_pP6aqkm5vT7w/Xv8FUdTxPxjvbeY3nk3irZmMAIylaK9fm0A9UcD8-duNSVCfyz1B50s3oncY0E5Wz0NLl05miHwQTLLxw1CzIA/GkgoKuPjpuG7jq4xUQ97N1SBEgHQNre1vBkBL9ax47Q",
+      "filename": "Partit Socialdemòcrata",
+      "size": 6185,
+      "type": "image/png",
+      "thumbnails": {
+        "small": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/mBE1gMPxewYmLy-oLR8SKQ/18M-ZvNQ8-hGsYhkVwF22tp9IDyC_eIAXc2bDryyNkc4qCGL-4w8zpmbmKTNhRXWpqBRKgT72JnalzHL4OkMDQ/WIf0t6INvluAOZJkVU-Xz96Nn1jpfk0ZfE-QKcB9Dbo",
+          "width": 76,
+          "height": 36
+        },
+        "large": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/QG9DJ2Wtw73bBvGO4xEHjg/hoAeiU8YbLUSaqac_D2n5_NpYz3keXjZM0S08krxaXfNg741FexX-5KrmZAqGJJ5ssPs5Lvz1QtdqR8aPsCQzA/yL8fRhFd7Kk5t9MKdgcCyZGedehZoX-hHC9HF35ZQHQ",
+          "width": 150,
+          "height": 71
+        },
+        "full": {
+          "url": "https://v5.airtableusercontent.com/v1/15/15/1678046400000/vaG_THAF9s-MRG6XkoEm5g/6R6lc-6RU7H5pQlIA2wuK3URXAsSRB6mLUFlkO9pq9b5BStZC9rrl5_tj3bRDjT-zyKMQausJpxHFazJmVs-gQ/PTbxE4XSGFWQp4wvnMT30S5DaR-xy4drPoUs6FXZT1Y",
+          "width": 3000,
+          "height": 3000
+        }
+      }
+    }
+  ],
+  "color": "#e30614",
+  "order": 1, 
+  "name": "Partit Socialdemòcrata",
+  "reach": "NATIONAL",
+  "groups": [
+    "LEFT"
+  ]
+}]
