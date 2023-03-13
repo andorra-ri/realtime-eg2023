@@ -43,6 +43,11 @@ export type Results = {
   lastModified: Date;
 };
 
+export type Coalition = {
+  name: string;
+  order: number;
+};
+
 /* SERVICE INTERFACES */
 export type ElectionsService = {
   getParties: () => Promise<Party[]>;
