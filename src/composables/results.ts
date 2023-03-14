@@ -91,5 +91,10 @@ export const useResults = () => {
     ...parrishResults.value.nominees,
   ]);
 
-  return { parrishResults, nationalResults, nominees, loading, updateResults };
+  const lastUpdate = computed(() => {
+    const dates = results.value.map(result => new Date(result.lastModified).getTime());
+    return new Date(Math.max(...dates));
+  });
+
+  return { parrishResults, nationalResults, nominees, lastUpdate, loading, updateResults };
 };
