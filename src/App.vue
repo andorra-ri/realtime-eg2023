@@ -4,6 +4,13 @@
     <p class="note">{{ message('last_update', { time: formatDate(lastUpdate) }) }}</p>
   </header>
 
+  <!-- Battleground -->
+  <div class="container">
+    <h2>{{ message('battlegrounds.title') }}</h2>
+    <p>{{ message('battlegrounds.caption') }}</p>
+    <Battleground :results="parrishResults.lists" />
+  </div>
+
   <!-- Coalitions -->
   <div class="container">
     <h2>{{ message('coalitions.title') }}</h2>
@@ -15,8 +22,8 @@
 
 <script setup lang="ts">
 import { useI10n, useResults } from '/@/composables';
-import { LeftRightSpectrum, CoalitionPlayer } from '/@/views';
+import { Battleground, LeftRightSpectrum, CoalitionPlayer } from '/@/views';
 
 const { message, formatDate } = useI10n();
-const { nominees, lastUpdate } = useResults();
+const { parrishResults, nominees, lastUpdate } = useResults();
 </script>

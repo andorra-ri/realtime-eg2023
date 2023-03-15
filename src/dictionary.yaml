@@ -2,6 +2,22 @@ title: '#EG2023'
 subtitle: Escrutini en temps real
 last_update: Última actualització a les {time}
 
+list: Llista
+votes: Vots
+
+parrishes:
+  CAN: Canillo
+  ENC: Encamp
+  ORD: Ordino
+  LM: La Massana
+  ALV: Andorra la Vella
+  SJL: Sant Julià de Lòria
+  EE: Escaldes-Engordany
+
+battlegrounds:
+  title: Battleground Races
+  caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+
 coalitions:
   title: Pactòmetre
   caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
