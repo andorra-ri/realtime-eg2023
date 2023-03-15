@@ -1,12 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap";
 @import
+  'layout',
+  'typography',
   'tooltip';
 
 :root {
   font-size: 16px;
-}
-
-#app {
-  background: #fff;
-  font: 1rem / 1.2 Rubik, Arial, sans-serif;
 }
