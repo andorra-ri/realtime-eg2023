@@ -1,6 +1,6 @@
 import { computed } from 'vue';
 import service from '/@/services/elections.json';
-import { groupBy, sum } from '/@/utils';
+import { groupBy, sum, isTie } from '/@/utils';
 import { useApi } from './api';
 import { useLists } from './lists';
 import type { Results, List } from '/@/types';
@@ -53,9 +53,9 @@ export const useResults = () => {
       }, {} as Record<string, List[]>);
 
     // Nominees from first list if it's not tied with second
-    const nominees = Object.values(lists).flatMap(([first, second]) => (
-      first.votes && first.votes !== second?.votes ? first.nominees : []
-    )).filter(Boolean);
+    const nominees = Object.values(lists)
+      .flatMap(_lists => (isTie(_lists.slice(0, 2)) ? [] : _lists[0].nominees))
+      .filter(Boolean);
 
     return { lists, nominees };
   });

@@ -1,3 +1,5 @@
+import type { List } from '/@/types';
+
 export type AttributesOfType<T, V> = {
   [K in keyof T]: (T[K] extends V ? K : never)
 }[keyof T];
@@ -31,3 +33,8 @@ export const sum = <T extends Record<string, any>>(
     const value = typeof adder === 'function' ? adder(item, i) : item[adder];
     return acc + value;
   }, 0);
+
+export const isTie = (lists: List[]) => {
+  const votes = lists.map(list => list.votes);
+  return new Set(votes).size !== lists.length;
+};
