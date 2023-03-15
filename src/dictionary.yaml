@@ -1,3 +1,14 @@
 title: '#EG2023'
 subtitle: Escrutini en temps real
 last_update: Última actualització a les {time}
+
+coalitions:
+  title: Pactòmetre
+  caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+
+  left_right:
+    title: Progressistes {vs} Conservadors
+    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+  play:
+    title: Crea la teva coalició
+    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
