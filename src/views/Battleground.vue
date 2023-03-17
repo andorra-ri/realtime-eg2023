@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <div ref="tooltip" class="tooltip">
       <VotesList
         v-if="props.results && activeParrish"

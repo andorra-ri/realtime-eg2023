@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <h3>{{ message('coalitions.play.title') }}</h3>
     <p class="note">{{ message('coalitions.play.caption') }}</p>
     <SeatsStackBar :nominees="nominees" />
