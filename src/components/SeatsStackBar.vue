@@ -34,7 +34,7 @@ const props = defineProps<{
   duel?: boolean;
 }>();
 
-const sumSeats = (group: PartyCount[]) => sum(group, ([, nominees]: PartyCount) => nominees.length);
+const sumSeats = (group: PartyCount[]) => sum(group.map(([, nominees]) => nominees.length));
 
 const groups = computed(() => {
   const PARTY_SORTER = (a: PartyCount, b: PartyCount) => (

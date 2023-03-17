@@ -1,6 +1,6 @@
 import { computed } from 'vue';
 import service from '/@/services/elections.json';
-import { groupBy, sum, isTie } from '/@/utils';
+import { groupBy, sum, max, isTie } from '/@/utils';
 import { useApi } from './api';
 import { useLists } from './lists';
 import type { Results, List } from '/@/types';
@@ -8,7 +8,7 @@ import type { Results, List } from '/@/types';
 const NATIONAL_SEATS = 14;
 
 const assignVacantSeats = (lists: (List & { reminder: number })[]) => {
-  const vacants = NATIONAL_SEATS - sum(lists, 'seats');
+  const vacants = NATIONAL_SEATS - sum(lists.map(list => list.seats));
 
   // Group by votes to find tied lists
   const listsByVotes = [...groupBy(lists, 'votes').values()];
@@ -64,7 +64,7 @@ export const useResults = () => {
     const result = results.value.find(({ district }) => district === 'NACIONAL');
     const lists = result?.lists || [];
 
-    const totalVotes = sum(lists, 'votes');
+    const totalVotes = sum(lists.map(list => list.votes));
     const qe = Math.ceil(totalVotes / NATIONAL_SEATS);
 
     // First assignation of seats and reminder for each party
@@ -93,7 +93,7 @@ export const useResults = () => {
 
   const lastUpdate = computed(() => {
     const dates = results.value.map(result => new Date(result.lastModified).getTime());
-    return new Date(Math.max(...dates));
+    return new Date(max(dates));
   });
 
   return { parrishResults, nationalResults, nominees, lastUpdate, loading, updateResults };

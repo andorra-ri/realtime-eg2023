@@ -1,5 +1,7 @@
 import type { List } from '/@/types';
 
+export * from 'stats-fns';
+
 export type AttributesOfType<T, V> = {
   [K in keyof T]: (T[K] extends V ? K : never)
 }[keyof T];
@@ -25,14 +27,6 @@ export const indexate = <
     acc[item[attr]] = item;
     return acc;
   }, {} as Record<T[K], T>);
-
-export const sum = <T extends Record<string, any>>(
-  items: T[],
-  adder: AttributesOfType<T, number> | ((item: T, i: number) => number),
-) => items.reduce((acc, item, i) => {
-    const value = typeof adder === 'function' ? adder(item, i) : item[adder];
-    return acc + value;
-  }, 0);
 
 export const isTie = (lists: List[]) => {
   const votes = lists.map(list => list.votes);
