@@ -6,9 +6,10 @@ export const useLists = () => {
   const {
     items: lists,
     loadItems: loadLists,
-    getItem: getList,
     loading,
-  } = useApi<List>(service.getLists);
+  } = useApi<List[]>(service.getLists, []);
+
+  const getList = (id: string) => lists.value.find(list => list.id === id);
 
   return { lists, loadLists, getList, loading };
 };

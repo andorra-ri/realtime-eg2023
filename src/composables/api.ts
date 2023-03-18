@@ -1,22 +1,16 @@
-import { ref, computed, onMounted } from 'vue';
-import { indexate } from '/@/utils';
+import { shallowRef, ref, onMounted } from 'vue';
 
-export const useApi = <T extends { id: string }>(getter: () => Promise<T[]>) => {
-  const ITEMS = ref<Record<string, T>>({});
+export const useApi = <T>(getter: () => Promise<T>, initial: T) => {
+  const items = shallowRef<T>(initial);
   const loading = ref<boolean>(false);
-
-  const items = computed(() => Object.values(ITEMS.value));
-
-  const getItem = (id: string) => ITEMS.value[id];
 
   const loadItems = async () => {
     loading.value = true;
-    const result = await getter();
-    ITEMS.value = indexate(result, 'id');
+    items.value = await getter();
     loading.value = false;
   };
 
   onMounted(loadItems);
 
-  return { items, loadItems, getItem, loading };
+  return { items, loadItems, loading };
 };

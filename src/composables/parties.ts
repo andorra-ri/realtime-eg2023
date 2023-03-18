@@ -8,9 +8,10 @@ export const useParties = () => {
   const {
     items: parties,
     loadItems: loadParties,
-    getItem: getParty,
     loading,
-  } = useApi<Party>(service.getParties);
+  } = useApi<Party[]>(service.getParties, []);
+
+  const getParty = (id: string) => parties.value.find(party => party.id === id);
 
   const coalitions = computed(() => groupBy(
     parties.value,

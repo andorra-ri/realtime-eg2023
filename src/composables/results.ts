@@ -34,27 +34,31 @@ const assignVacantSeats = (lists: (List & { reminder: number })[]) => {
 };
 
 export const useResults = () => {
+  const { getList } = useLists();
+
   const {
     items: results,
     loadItems: updateResults,
     loading,
-  } = useApi<Results>(service.getResults);
-
-  const { getList } = useLists();
+  } = useApi<Results[]>(service.getResults, []);
 
   const parrishResults = computed(() => {
     const lists = results.value
       .filter(result => result.district !== 'NACIONAL')
       .reduce((acc, result) => {
         acc[result.district] = result.lists
-          .map(({ listId, votes }) => ({ ...getList(listId), votes }))
-          .sort((a, b) => b.votes - a.votes);
+          .map(({ listId, votes }) => {
+            const list = getList(listId);
+            return list && { ...list, votes };
+          })
+          .filter(Boolean) // Safely cast after filtering
+          .sort((a, b) => b!.votes - a!.votes) as List[];
         return acc;
       }, {} as Record<string, List[]>);
 
     // Nominees from first list if it's not tied with second
     const nominees = Object.values(lists)
-      .flatMap(_lists => (isTie(_lists.slice(0, 2)) ? [] : _lists[0].nominees))
+      .flatMap(_lists => (isTie(_lists.slice(0, 2)) ? [] : _lists[0]?.nominees))
       .filter(Boolean);
 
     return { lists, nominees };
@@ -71,8 +75,9 @@ export const useResults = () => {
     const firstAssignation = lists.map(({ listId, votes }) => {
       const seats = Math.floor(votes / qe);
       const reminder = votes - (qe * seats);
-      return { ...getList(listId), votes, seats, reminder };
-    });
+      const list = getList(listId);
+      return list && { ...list, votes, seats, reminder };
+    }).filter(Boolean) as (List & { reminder: number })[]; // Safely cast after filtering
 
     const seatsAssignation = assignVacantSeats(firstAssignation);
 
@@ -81,7 +86,7 @@ export const useResults = () => {
       return { ...list, seats: list.seats + seats };
     });
 
-    const nominees = secondAssignation.flatMap(list => list.nominees?.slice(0, list.seats) || []);
+    const nominees = secondAssignation.flatMap(list => list.nominees.slice(0, list.seats) || []);
 
     return { lists: secondAssignation, nominees, totalVotes, qe };
   });
@@ -93,7 +98,7 @@ export const useResults = () => {
 
   const lastUpdate = computed(() => {
     const dates = results.value.map(result => new Date(result.lastModified).getTime());
-    return new Date(max(dates));
+    return dates && new Date(max(dates));
   });
 
   return { parrishResults, nationalResults, nominees, lastUpdate, loading, updateResults };
