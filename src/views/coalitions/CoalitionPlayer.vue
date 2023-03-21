@@ -5,7 +5,7 @@
     <SeatsStackBar :nominees="nominees" />
     <fieldset class="parties">
       <label v-for="party in parties" :key="party.name">
-        <input v-model="coalition" :value="party" type="checkbox">
+        <input v-model="coalition" :value="party.id" type="checkbox">
         <img :src="party.logo">
       </label>
     </fieldset>
@@ -16,7 +16,7 @@
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { SeatsStackBar } from '/@/components';
-import type { Nominee, Party } from '/@/types';
+import type { Nominee } from '/@/types';
 
 const props = defineProps<{
   nominees: Nominee[];
@@ -26,9 +26,9 @@ const { message } = useI10n();
 
 const parties = computed(() => [...new Set(props.nominees.map(nominee => nominee.party))]);
 
-const coalition = ref<Party[]>([]);
+const coalition = ref<string[]>([]);
 const nominees = computed(() => (
-  props.nominees.filter(nominee => coalition.value.includes(nominee.party))
+  props.nominees.filter(nominee => coalition.value.includes(nominee.party.id))
 ));
 </script>
 
