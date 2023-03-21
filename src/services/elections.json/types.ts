@@ -65,3 +65,11 @@ export type ResultsDTO = {
   last_modified: string;
   valids: number;
 };
+
+export type HistoricDTO = {
+  _id: RecordId;
+  _created: string;
+  type: 'BLANK' | 'NULL' | 'ABSTENTION';
+  year: number;
+  value: number;
+};

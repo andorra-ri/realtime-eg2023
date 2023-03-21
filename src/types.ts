@@ -48,9 +48,16 @@ export type Coalition = {
   order: number;
 };
 
+export type Historic = {
+  type: 'BLANK' | 'NULL' | 'ABSTENTION';
+  year: number;
+  value: number;
+};
+
 /* SERVICE INTERFACES */
 export type ElectionsService = {
   getParties: () => Promise<Party[]>;
   getLists: () => Promise<List[]>;
   getResults: () => Promise<Results[]>;
+  getHistorics: () => Promise<Historic[]>;
 };

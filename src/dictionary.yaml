@@ -28,3 +28,13 @@ coalitions:
   play:
     title: Crea la teva coalició
     caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+historic:
+  title: Lorem ipsum
+  caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+  no_votes:
+    title: Què voten els que no voten
+    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    blanks: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    nulls: Lorem ipsum dolor, sit amet consectetur adipisicing elit.

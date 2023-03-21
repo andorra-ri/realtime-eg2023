@@ -43,8 +43,9 @@ export const useResults = () => {
   } = useApi<Results[]>(service.getResults, []);
 
   const parrishResults = computed(() => {
-    const lists = results.value
-      .filter(result => result.district !== 'NACIONAL')
+    const parrishes = results.value.filter(result => result.district !== 'NACIONAL');
+
+    const lists = parrishes
       .reduce((acc, result) => {
         acc[result.district] = result.lists
           .map(({ listId, votes }) => {
@@ -61,12 +62,16 @@ export const useResults = () => {
       .flatMap(_lists => (isTie(_lists.slice(0, 2)) ? [] : _lists[0]?.nominees))
       .filter(Boolean);
 
-    return { lists, nominees };
+    const nulls = sum(parrishes.map(result => result.nulls));
+    const blanks = sum(parrishes.map(result => result.blanks));
+    const abstention = sum(parrishes.map(result => result.abstention));
+
+    return { lists, nominees, blanks, nulls, abstention };
   });
 
   const nationalResults = computed(() => {
     const result = results.value.find(({ district }) => district === 'NACIONAL');
-    const lists = result?.lists || [];
+    const { lists = [], blanks = 0, nulls = 0, abstention = 0 } = result || {};
 
     const totalVotes = sum(lists.map(list => list.votes));
     const qe = Math.ceil(totalVotes / NATIONAL_SEATS);
@@ -88,7 +93,7 @@ export const useResults = () => {
 
     const nominees = secondAssignation.flatMap(list => list.nominees.slice(0, list.seats) || []);
 
-    return { lists: secondAssignation, nominees, totalVotes, qe };
+    return { lists: secondAssignation, nominees, totalVotes, qe, blanks, nulls, abstention };
   });
 
   const nominees = computed(() => [

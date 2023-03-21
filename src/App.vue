@@ -18,12 +18,19 @@
     <LeftRightSpectrum :nominees="nominees" />
     <CoalitionPlayer :nominees="nominees" />
   </div>
+
+  <Historics :current="nationalResults" />
 </template>
 
 <script setup lang="ts">
 import { useI10n, useResults } from '/@/composables';
-import { Battleground, LeftRightSpectrum, CoalitionPlayer } from '/@/views';
+import {
+  Battleground,
+  LeftRightSpectrum,
+  CoalitionPlayer,
+  Historics,
+} from '/@/views';
 
 const { message, formatDate } = useI10n();
-const { parrishResults, nominees, lastUpdate } = useResults();
+const { nationalResults, parrishResults, nominees, lastUpdate } = useResults();
 </script>
