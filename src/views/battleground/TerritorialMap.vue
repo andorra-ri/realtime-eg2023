@@ -2,9 +2,9 @@
   <section class="container">
     <div ref="tooltip" class="tooltip">
       <VotesList
-        v-if="props.results && activeParrish"
+        v-if="props.lists && activeParrish"
         :name="message(`parrishes.${activeParrish}`)"
-        :lists="props.results[activeParrish]" />
+        :lists="props.lists[activeParrish]" />
     </div>
     <ParrishMap class="map" @hover="handleTooltip" />
   </section>
@@ -24,14 +24,14 @@ type SvgEvent = {
 };
 
 const props = defineProps<{
-  results: Record<string, List[]>;
+  lists: Record<string, List[]>;
 }>();
 
 const { message } = useI10n();
 
 const colors = computed(() => {
   const UNASSIGNED_COLOR = '#f4f4f4';
-  return Object.entries(props.results).reduce((acc, [parrish, lists]) => {
+  return Object.entries(props.lists).reduce((acc, [parrish, lists]) => {
     const winner = isTie(lists.slice(0, 2)) ? undefined : lists[0];
     acc[parrish] = winner?.nominees?.[0].party.color || UNASSIGNED_COLOR;
     return acc;

@@ -3,33 +3,14 @@
     <h1>{{ message('title') }}<em>{{ message('subtitle') }}</em></h1>
     <p class="note">{{ message('last_update', { time: formatDate(lastUpdate) }) }}</p>
   </header>
-
-  <!-- Battleground -->
-  <div class="container">
-    <h2>{{ message('battlegrounds.title') }}</h2>
-    <p>{{ message('battlegrounds.caption') }}</p>
-    <Battleground :results="parrishResults.lists" />
-  </div>
-
-  <!-- Coalitions -->
-  <div class="container">
-    <h2>{{ message('coalitions.title') }}</h2>
-    <p>{{ message('coalitions.caption') }}</p>
-    <LeftRightSpectrum :nominees="nominees" />
-    <CoalitionPlayer :nominees="nominees" />
-  </div>
-
+  <Battleground :results="parrishResults" />
+  <Coalitions :nominees="nominees" />
   <Historics :current="nationalResults" />
 </template>
 
 <script setup lang="ts">
 import { useI10n, useResults } from '/@/composables';
-import {
-  Battleground,
-  LeftRightSpectrum,
-  CoalitionPlayer,
-  Historics,
-} from '/@/views';
+import { Battleground, Coalitions, Historics } from '/@/views';
 
 const { message, formatDate } = useI10n();
 const { nationalResults, parrishResults, nominees, lastUpdate } = useResults();
