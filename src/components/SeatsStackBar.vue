@@ -29,7 +29,7 @@ type PartyCount = [Party, Nominee[]];
 
 const props = defineProps<{
   nominees: Nominee[];
-  grouper?: (nominee: Nominee) => Coalition | undefined;
+  grouper?: (nominee: Nominee) => Coalition | string | undefined;
   order?: boolean;
   duel?: boolean;
 }>();
@@ -46,7 +46,11 @@ const groups = computed(() => {
   const groupedNominees = props.grouper
     ? [...groupBy(props.nominees, props.grouper)]
       .filter(([group]) => !!group) // Remove non grouped items (group) es
-      .sort(([groupA], [groupB]) => groupA!.order - groupB!.order) // Sort by group order
+      .sort(([groupA, nomineesA], [groupB, nomineesB]) => (
+        typeof groupA !== 'string' && typeof groupB !== 'string'
+          ? (groupA?.order || 0) - (groupB?.order || 0)
+          : nomineesB.length - nomineesA.length
+      )) // Sort by group order or nominees length
       .slice(0, props.duel ? 2 : undefined) // Keep only 2 groups if duel
       .map(([, nominees]) => nominees) // Keep only nominees
     : [props.nominees];
