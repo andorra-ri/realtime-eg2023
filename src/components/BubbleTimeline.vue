@@ -2,7 +2,7 @@
   <section class="bubbles">
     <span
       v-for="{ x, diameter, year, value } in bubbles"
-      :key="x"
+      :key="year"
       class="tick"
       :style="`--x:${x}%;--diameter:${diameter}px`">
       {{ year }}
