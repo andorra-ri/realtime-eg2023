@@ -2,11 +2,13 @@
   <section class="container">
     <h3>{{ message('coalitions.play.title') }}</h3>
     <p class="note">{{ message('coalitions.play.caption') }}</p>
-    <SeatsStackBar :nominees="nominees" />
-    <fieldset class="parties">
-      <label v-for="party in parties" :key="party.name">
-        <input v-model="coalition" :value="party.id" type="checkbox">
-        <img :src="party.logo">
+    <SeatsStackBar :nominees="nominees" :grouper="grouper" />
+    <fieldset class="coalitions">
+      <label v-for="[leaderId, parties] in coalitions" :key="leaderId">
+        <input v-model="customCoalition" :value="leaderId" type="checkbox">
+        <span class="parties">
+          <img v-for="party in parties" :key="party.id" :src="party.logo">
+        </span>
       </label>
     </fieldset>
   </section>
@@ -17,6 +19,7 @@ import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { SeatsStackBar } from '/@/components';
 import type { Nominee } from '/@/types';
+import { groupBy } from '/@/utils';
 
 const props = defineProps<{
   nominees: Nominee[];
@@ -24,16 +27,23 @@ const props = defineProps<{
 
 const { message } = useI10n();
 
-const parties = computed(() => [...new Set(props.nominees.map(nominee => nominee.party))]);
+const grouper = (nominee: Nominee) => nominee.party.coalitionLeaderId || nominee.party.id;
 
-const coalition = ref<string[]>([]);
-const nominees = computed(() => (
-  props.nominees.filter(nominee => coalition.value.includes(nominee.party.id))
-));
+const coalitions = computed(() => {
+  const parties = [...new Set(props.nominees.map(nominee => nominee.party))];
+  return groupBy(parties, party => party.coalitionLeaderId || party.id);
+});
+
+const customCoalition = ref<string[]>([]);
+
+const nominees = computed(() => {
+  const inCoalition = (nominee: Nominee) => customCoalition.value.includes(grouper(nominee));
+  return props.nominees.filter(inCoalition);
+});
 </script>
 
 <style lang="scss" scoped>
-.parties {
+.coalitions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,15 +59,20 @@ const nominees = computed(() => (
     margin: 0.25rem auto;
     max-height: 1.25rem;
     max-width: 6rem;
-    filter: grayscale(1) opacity(0.5);
-    transition: all 0.3s ease;
-    cursor: pointer;
   }
+}
 
-  :hover > img,
-  :checked + img {
+.parties {
+  display: flex;
+  gap: 0.5rem;
+  filter: grayscale(1) opacity(0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  :hover > &,
+  :checked ~ & {
     filter: none;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 </style>
