@@ -98,14 +98,13 @@ h3 {
   }
 
   .margin {
-    // color: #57cc99;
-    background: #229664;
+    background: #99c140;
     color: #fff;
     font-size: 0.9rem;
     padding: 0.125rem 0.5rem 0.125rem 0.35rem;
 
-    &.weak { background: #e8a042; }
-    &.critic { background: #ef233c; }
+    &.weak { background: #e7b416; }
+    &.critic { background: #cc3232; }
   }
 }
 </style>
