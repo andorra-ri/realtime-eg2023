@@ -1,3 +1,5 @@
+TIMEOUT: 120000 
+
 formats:
   DATE:
     hour12: false

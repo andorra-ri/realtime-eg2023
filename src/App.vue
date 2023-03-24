@@ -9,9 +9,13 @@
 </template>
 
 <script setup lang="ts">
+import { useCountdown } from './composables/countdown';
 import { useI10n, useResults } from '/@/composables';
 import { Battleground, Coalitions, Historics } from '/@/views';
+import config from '/@/config.yaml';
 
 const { message, formatDate } = useI10n();
-const { nationalResults, parrishResults, nominees, lastUpdate } = useResults();
+const { nationalResults, parrishResults, nominees, updateResults, lastUpdate } = useResults();
+
+useCountdown(config.TIMEOUT, updateResults);
 </script>
