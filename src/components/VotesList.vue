@@ -1,5 +1,11 @@
 <template>
   <section>
+    <div class="counting">
+      <div class="percent" :style="`--counting:${props.counting}`">
+        {{ message('counting') }} <strong>{{ Math.round(props.counting * 100) }}%</strong>
+      </div>
+      <ConfidenceTrafficLight :counting="props.counting" />
+    </div>
     <h3>{{ name }}</h3>
     <table class="rank" :class="{ tie }">
       <thead>
@@ -31,11 +37,13 @@
 import { computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { isTie } from '/@/utils';
+import ConfidenceTrafficLight from './ConfidenceTrafficLight.vue';
 import type { List } from '/@/types';
 
 const props = defineProps<{
   name: string;
   lists: List[];
+  counting: number;
 }>();
 
 const { message } = useI10n();
@@ -48,8 +56,19 @@ const winnerMargin = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+.counting {
+  display: flex;
+  text-align: left;
+  margin: 0.5rem;
+
+  .percent {
+    font-size: 0.8rem;
+    margin-right: auto;
+  }
+}
+
 h3 {
-  margin: 0.75rem;
+  margin: 1rem 0.75rem;
   text-align: left;
 }
 

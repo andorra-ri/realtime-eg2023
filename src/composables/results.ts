@@ -62,11 +62,17 @@ export const useResults = () => {
       .flatMap(_lists => (isTie(_lists.slice(0, 2)) ? [] : _lists[0]?.nominees))
       .filter(Boolean);
 
+    const countings = parrishes.reduce((acc, result) => {
+      const { valids, blanks, nulls, participation } = result;
+      acc[result.district] = (valids + blanks + nulls) / participation;
+      return acc;
+    }, {} as Record<string, number>);
+
     const nulls = sum(parrishes.map(result => result.nulls));
     const blanks = sum(parrishes.map(result => result.blanks));
     const abstention = sum(parrishes.map(result => result.abstention));
 
-    return { lists, nominees, blanks, nulls, abstention };
+    return { lists, nominees, blanks, nulls, abstention, countings };
   });
 
   const nationalResults = computed(() => {

@@ -4,7 +4,8 @@
       <VotesList
         v-if="props.lists && activeParrish"
         :name="message(`parrishes.${activeParrish}`)"
-        :lists="props.lists[activeParrish]" />
+        :lists="props.lists[activeParrish]"
+        :counting="props.countings[activeParrish]" />
     </div>
     <ParrishMap class="map" @hover="handleTooltip" />
   </section>
@@ -25,6 +26,7 @@ type SvgEvent = {
 
 const props = defineProps<{
   lists: Record<string, List[]>;
+  countings: Record<string, number>;
 }>();
 
 const { message } = useI10n();

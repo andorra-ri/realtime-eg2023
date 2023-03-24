@@ -2,7 +2,9 @@
   <div class="container">
     <h2>{{ message('battlegrounds.title') }}</h2>
     <p>{{ message('battlegrounds.caption') }}</p>
-    <TerritorialMap :lists="props.results.lists" />
+    <TerritorialMap
+      :lists="props.results.lists"
+      :countings="props.results.countings" />
   </div>
 </template>
 
@@ -14,6 +16,7 @@ import type { List } from '/@/types';
 const props = defineProps<{
   results: {
     lists: Record<string, List[]>;
+    countings: Record<string, number>;
   };
 }>();
 
