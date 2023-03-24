@@ -8,7 +8,7 @@
       {{ year }}
       <span
         class="bubble"
-        :data-tooltip="`${value} ${message('votes')}`" />
+        :data-tooltip="`${value} ${props.unit || ''}`" />
     </span>
   </section>
 </template>
@@ -16,7 +16,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { min, max, rescale } from '/@/utils';
-import { useI10n } from '/@/composables';
 
 type Bubble = {
   year: number;
@@ -26,11 +25,10 @@ type Bubble = {
 const props = defineProps<{
   data: Bubble[];
   max?: number;
+  unit?: string;
 }>();
 
 const MAX_DIAMETER = 100;
-
-const { message } = useI10n();
 
 const bubbles = computed(() => {
   const dates = props.data.map(bubble => bubble.year);

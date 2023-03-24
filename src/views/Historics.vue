@@ -4,11 +4,11 @@
     <p>{{ message('historic.caption') }}</p>
     <section class="container">
       <h3>{{ message('historic.no_votes.title') }}</h3>
-      <BubbleTimeline :data="abstention" :max="maxVotes" />
+      <BubbleTimeline :data="abstention" :max="maxVotes" :unit="message('votes')" />
       <p class="note">{{ message('historic.no_votes.abstention') }}</p>
-      <BubbleTimeline :data="blanks" :max="maxVotes" />
+      <BubbleTimeline :data="blanks" :max="maxVotes" :unit="message('votes')" />
       <p class="note">{{ message('historic.no_votes.blanks') }}</p>
-      <BubbleTimeline :data="nulls" :max="maxVotes" />
+      <BubbleTimeline :data="nulls" :max="maxVotes" :unit="message('votes')" />
       <p class="note">{{ message('historic.no_votes.nulls') }}</p>
     </section>
   </section>
@@ -54,8 +54,9 @@ const maxVotes = computed(() => {
 });
 </script>
 
-<style>
-.tick:last-child .bubble {
-  box-shadow: 0 0 0 1px #888;
+<style lang="scss">
+.tick:last-child {
+  font-weight: bold;
+  .bubble { box-shadow: 0 0 0 1px #888; }
 }
 </style>
