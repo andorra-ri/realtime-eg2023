@@ -1,5 +1,10 @@
 TIMEOUT: 120000 
 
+CONFIDENCE_LEVELS:
+  strong: 0.8
+  consolidated: 0.2
+  weak: 0.05
+
 formats:
   DATE:
     hour12: false

@@ -14,6 +14,12 @@ parrishes:
   SJL: Sant Julià de Lòria
   EE: Escaldes-Engordany
 
+confidence:
+  insufficient: Insuficient
+  weak: Feble
+  consolidated: Consolidat
+  strong: Fort
+
 battlegrounds:
   title: Battleground Races
   caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
