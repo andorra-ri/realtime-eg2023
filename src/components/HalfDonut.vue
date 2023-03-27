@@ -51,7 +51,6 @@ const items = computed(() => {
   width: 100%;
   aspect-ratio: 2 / 1;
   overflow: hidden;
-  padding-top: 0.25rem;
 
   &::before {
     position: absolute;
@@ -71,7 +70,7 @@ const items = computed(() => {
     display: block;
     height: calc(2rem + var(--width));
     transform: translateX(-50%);
-    width: 0.125rem;
+    width: 0.25rem;
     background: currentcolor;
     position: absolute;
     top: 0;
@@ -91,7 +90,7 @@ const items = computed(() => {
     border-bottom-left-radius: 5000px;
     border-bottom-right-radius: 5000px;
     transform: rotate(calc(1deg * var(--rotate)));
-    transform-origin: 50% 0.25rem;
+    transform-origin: 50% 0;
     animation: arc 1s linear forwards;
     color: var(--color);
     box-shadow: 0 0 0 0.125rem #fff;
