@@ -4,11 +4,11 @@
     <p>{{ message('historic.caption') }}</p>
     <section class="container">
       <h3>{{ message('historic.no_votes.title') }}</h3>
-      <BubbleTimeline :data="abstention" :max="maxVotes" :unit="message('votes')" />
+      <BubbleTimeline :data="abstention" :max="100" unit="%" />
       <p class="note">{{ message('historic.no_votes.abstention') }}</p>
-      <BubbleTimeline :data="blanks" :max="maxVotes" :unit="message('votes')" />
+      <BubbleTimeline :data="blanks" :max="100" unit="%" />
       <p class="note">{{ message('historic.no_votes.blanks') }}</p>
-      <BubbleTimeline :data="nulls" :max="maxVotes" :unit="message('votes')" />
+      <BubbleTimeline :data="nulls" :max="100" unit="%" />
       <p class="note">{{ message('historic.no_votes.nulls') }}</p>
     </section>
   </section>
@@ -18,13 +18,15 @@
 import { computed } from 'vue';
 import { useI10n, useHistorics } from '/@/composables';
 import { BubbleTimeline } from '/@/components';
-import { max } from '/@/utils';
+import { round, rescale } from '/@/utils';
 
 const props = defineProps<{
   current: {
     nulls: number;
     blanks: number;
     abstention: number;
+    participation: number;
+    census: number;
   };
 }>();
 
@@ -34,29 +36,30 @@ const year = new Date().getFullYear();
 const historics = useHistorics();
 
 const blanks = computed(() => {
-  const current = { year, type: 'BLANK', value: props.current.blanks || 0 };
+  const { blanks: _blanks, participation } = props.current;
+  const value = round(rescale(_blanks, 0, participation, 0, 100) || 0);
+  const current = { year, type: 'BLANK', value };
   return [...historics.blanks.value, current];
 });
 
 const nulls = computed(() => {
-  const current = { year, type: 'NULL', value: props.current.nulls || 0 };
+  const { nulls: _nulls, participation } = props.current;
+  const value = round(rescale(_nulls, 0, participation, 0, 100) || 0);
+  const current = { year, type: 'NULL', value };
   return [...historics.nulls.value, current];
 });
 
 const abstention = computed(() => {
-  const current = { year, type: 'ABSTENTION', value: props.current.abstention || 0 };
+  const { abstention: _abstention, census } = props.current;
+  const value = round(rescale(_abstention, 0, census, 0, 100) || 0);
+  const current = { year, type: 'ABSTENTION', value };
   return [...historics.abstention.value, current];
-});
-
-const maxVotes = computed(() => {
-  const historic = [...blanks.value, ...nulls.value, ...abstention.value];
-  return max(historic.map(({ value }) => value));
 });
 </script>
 
 <style lang="scss">
 .tick:last-child {
   font-weight: bold;
-  .bubble { box-shadow: 0 0 0 1px #888; }
+  .bubble { background: #0003; }
 }
 </style>

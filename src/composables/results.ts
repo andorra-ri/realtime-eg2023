@@ -77,7 +77,7 @@ export const useResults = () => {
 
   const nationalResults = computed(() => {
     const result = results.value.find(({ district }) => district === 'NACIONAL');
-    const { lists = [], blanks = 0, nulls = 0, abstention = 0 } = result || {};
+    const { lists = [] } = result || {};
 
     const totalVotes = sum(lists.map(list => list.votes));
     const qe = Math.ceil(totalVotes / NATIONAL_SEATS);
@@ -99,7 +99,7 @@ export const useResults = () => {
 
     const nominees = secondAssignation.flatMap(list => list.nominees.slice(0, list.seats) || []);
 
-    return { lists: secondAssignation, nominees, totalVotes, qe, blanks, nulls, abstention };
+    return { ...result, lists: secondAssignation, nominees, totalVotes, qe };
   });
 
   const nominees = computed(() => [
