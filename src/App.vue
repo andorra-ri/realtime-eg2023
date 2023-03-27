@@ -19,5 +19,5 @@ import config from '/@/config.yaml';
 const { message, formatDate } = useI10n();
 const { nationalResults, parrishResults, nominees, updateResults, lastUpdate } = useResults();
 
-useCountdown(config.TIMEOUT, updateResults);
+// useCountdown(config.TIMEOUT, updateResults);
 </script>
