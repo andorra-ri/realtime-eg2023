@@ -329,7 +329,9 @@
     "name": "Concòrdia",
     "district": [
       "0_NACIONAL"
-    ]
+    ],
+    "order": 2,
+    "color": "#99b4bf"
   },
   {
     "_id": "recJe7rA61BCrgSaa",
@@ -487,7 +489,9 @@
     "name": "Demòcrates + CC + ACO + UP + Independents",
     "district": [
       "0_NACIONAL"
-    ]
+    ],
+    "color": "#f08108",
+    "order": 6
   },
   {
     "_id": "recOsly6lLoKoBbEr",
@@ -731,7 +735,9 @@
     "name": "Andorra Endavant",
     "district": [
       "0_NACIONAL"
-    ]
+    ],
+    "order": 4,
+    "color": "#4d7397"
   },
   {
     "_id": "recX9CRRFH9yLkBFR",
@@ -857,7 +863,9 @@
     "name": "Partit Socialdemòcrata Progressistes SDP +",
     "district": [
       "0_NACIONAL"
-    ]
+    ],
+    "order": 1,
+    "color": "#e30614"
   },
   {
     "_id": "reca2Qzjta3qg5qkG",
@@ -982,7 +990,9 @@
     "name": "Acció",
     "district": [
       "0_NACIONAL"
-    ]
+    ],
+    "order": 3,
+    "color": "#72c0c0"
   },
   {
     "_id": "recbodeJQrjUPKiNU",
@@ -1166,7 +1176,9 @@
     "name": "Liberals d'Andorra",
     "district": [
       "0_NACIONAL"
-    ]
+    ],
+    "order": 5,
+    "color": "#009dc5"
   },
   {
     "_id": "recpZRAwTHN56Sno1",

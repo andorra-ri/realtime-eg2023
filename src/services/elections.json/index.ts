@@ -36,7 +36,6 @@ const getLists = async (): Promise<List[]> => {
       votes: 0,
       seats: 0,
       district: list.district[0].split('_')[1],
-      logo: UrlFromAttachment(list.logo),
       parties: list.parties.map(partyId => parties[partyId]),
       nominees: list.nominees.map(nominee => {
         const party = parties[nominee.party[0]];

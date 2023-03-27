@@ -18,7 +18,7 @@ export type List = {
   id: string;
   name: string;
   color?: string;
-  logo?: string;
+  order: number;
   district: string;
   votes: number;
   seats: number;

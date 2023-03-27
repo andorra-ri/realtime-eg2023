@@ -3,6 +3,9 @@
     <h1>{{ message('title') }}<em>{{ message('subtitle') }}</em></h1>
     <p class="note">{{ message('last_update', { time: formatDate(lastUpdate) }) }}</p>
   </header>
+  <ParliamentArc
+    :nominees="nominees"
+    :lists="nationalResults.lists" />
   <Battleground :results="parrishResults" />
   <Coalitions :nominees="nominees" />
   <Historics :current="nationalResults" />
@@ -10,7 +13,7 @@
 
 <script setup lang="ts">
 import { useI10n, useResults, useCountdown } from '/@/composables';
-import { Battleground, Coalitions, Historics } from '/@/views';
+import { ParliamentArc, Battleground, Coalitions, Historics } from '/@/views';
 import config from '/@/config.yaml';
 
 const { message, formatDate } = useI10n();

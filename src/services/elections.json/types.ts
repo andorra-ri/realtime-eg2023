@@ -37,7 +37,7 @@ export type ListDTO = {
   _created: string;
   name: string;
   color?: string;
-  logo?: AttachmentDTO[];
+  order: number;
   parties: RecordId[];
   nominees: {
     _id: RecordId;
