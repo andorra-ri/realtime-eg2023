@@ -64,6 +64,6 @@ const getHistorics = async (): Promise<Historic[]> => {
   return historics;
 };
 
-const service: ElectionsService = { getParties, getLists, getResults, getHistorics };
+const service: ElectionsService = { getLists, getResults, getHistorics };
 
 export default service;

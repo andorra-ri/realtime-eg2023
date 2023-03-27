@@ -56,7 +56,6 @@ export type Historic = {
 
 /* SERVICE INTERFACES */
 export type ElectionsService = {
-  getParties: () => Promise<Party[]>;
   getLists: () => Promise<List[]>;
   getResults: () => Promise<Results[]>;
   getHistorics: () => Promise<Historic[]>;
