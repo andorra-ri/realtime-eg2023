@@ -5,6 +5,11 @@ CONFIDENCE_LEVELS:
   consolidated: 0.5
   weak: 0.1
 
+hotspots:
+  THRESHOLDS:
+    hot: 0.06
+    burn: 0.03
+
 formats:
   DATE:
     hour12: false

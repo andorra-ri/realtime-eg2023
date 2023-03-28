@@ -26,6 +26,20 @@
   }
 }
 
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  &--reverse { flex-direction: row-reverse; }
+  &--middle { align-items: center; }
+
+  & > * {
+    flex: 1;
+    min-width: 15rem;
+  }
+}
+
 @keyframes countdown {
   100% { transform: translate(0); }
 }

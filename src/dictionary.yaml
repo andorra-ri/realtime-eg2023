@@ -28,6 +28,10 @@ arc:
 battlegrounds:
   title: Battleground Races
   caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+  hotspots:
+    title: Hotspots
+    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    calm: Tot tranquil a la vil·la del pingüí
 
 coalitions:
   title: Pactòmetre
