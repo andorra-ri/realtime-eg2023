@@ -16,6 +16,11 @@
           :countings="props.territorial.countings" />
       </section>
     </div>
+    <section class="container">
+      <h3>{{ message('battlegrounds.national.title') }}</h3>
+      <p class="note">{{ message('battlegrounds.national.caption') }}</p>
+      <NationalTable :results="props.national" />
+    </section>
   </div>
 </template>
 
@@ -23,10 +28,12 @@
 import { useI10n } from '/@/composables';
 import TerritorialMap from './TerritorialMap.vue';
 import Hotspots from './Hotspots.vue';
-import type { TerritorialResults } from '/@/types';
+import NationalTable from './NationalTable.vue';
+import type { TerritorialResults, NationalResults } from '/@/types';
 
 const props = defineProps<{
   territorial: TerritorialResults;
+  national: NationalResults;
 }>();
 
 const { message } = useI10n();

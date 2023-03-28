@@ -4,7 +4,15 @@ last_update: Última actualització a les {time}
 
 list: Llista
 votes: Vots
+reminder: Resta
+seats: Escons
+seats_by_votes: Escons per vots
+seats_by_reminder: Escons per resta
+until_seat: Per obtenir {br} un escó
 counting: Escrutini
+
+more: Més »
+less: « Menys
 
 parrishes:
   CAN: Canillo
@@ -35,6 +43,9 @@ battlegrounds:
     title: Hotspots
     caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     calm: Tot tranquil a la vil·la del pingüí
+  national:
+    title: National
+    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 
 coalitions:
   title: Pactòmetre
