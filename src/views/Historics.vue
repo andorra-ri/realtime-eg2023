@@ -19,15 +19,10 @@ import { computed } from 'vue';
 import { useI10n, useHistorics } from '/@/composables';
 import { BubbleTimeline } from '/@/components';
 import { round, rescale } from '/@/utils';
+import type { NationalResults } from '/@/types';
 
 const props = defineProps<{
-  current: {
-    nulls: number;
-    blanks: number;
-    abstention: number;
-    participation: number;
-    census: number;
-  };
+  current: NationalResults;
 }>();
 
 const { message } = useI10n();
@@ -36,21 +31,21 @@ const year = new Date().getFullYear();
 const historics = useHistorics();
 
 const blanks = computed(() => {
-  const { blanks: _blanks, participation } = props.current;
+  const { blanks: _blanks = 0, participation = 0 } = props.current;
   const value = round(rescale(_blanks, 0, participation, 0, 100) || 0);
   const current = { year, type: 'BLANK', value };
   return [...historics.blanks.value, current];
 });
 
 const nulls = computed(() => {
-  const { nulls: _nulls, participation } = props.current;
+  const { nulls: _nulls = 0, participation = 0 } = props.current;
   const value = round(rescale(_nulls, 0, participation, 0, 100) || 0);
   const current = { year, type: 'NULL', value };
   return [...historics.nulls.value, current];
 });
 
 const abstention = computed(() => {
-  const { abstention: _abstention, census } = props.current;
+  const { abstention: _abstention = 0, census = 0 } = props.current;
   const value = round(rescale(_abstention, 0, census, 0, 100) || 0);
   const current = { year, type: 'ABSTENTION', value };
   return [...historics.abstention.value, current];
