@@ -1,3 +1,6 @@
+/* UTILITY TYPES */
+export type Replace<O extends object, T extends object> = Omit<T, keyof O> & O;
+
 /* DOMAIN MODELS */
 export type Party = {
   id: string;
@@ -41,6 +44,27 @@ export type Results = {
   blanks: number;
   nulls: number;
   lastModified: Date;
+};
+
+export type TerritorialResults = {
+  lists: Record<string, List[]>;
+  nominees: Nominee[];
+  countings: Record<string, number>;
+  nulls: number;
+  blanks: number;
+  abstention: number;
+};
+
+export type NationalResults = Replace<{
+  lists: ({
+    reminder: number;
+    votes: number;
+    seats: number;
+  } & List)[];
+}, Partial<Results>> & {
+  nominees: Nominee[];
+  qe: number;
+  totalVotes: number;
 };
 
 export type Coalition = {

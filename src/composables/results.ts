@@ -3,7 +3,7 @@ import { apiService } from '/@/services';
 import { groupBy, sum, max, isTie } from '/@/utils';
 import { useApi } from './api';
 import { useLists } from './lists';
-import type { Results, List } from '/@/types';
+import type { Results, List, TerritorialResults, NationalResults } from '/@/types';
 
 const NATIONAL_SEATS = 14;
 
@@ -42,7 +42,7 @@ export const useResults = () => {
     loading,
   } = useApi<Results[]>(apiService.getResults, []);
 
-  const parrishResults = computed(() => {
+  const parrishResults = computed<TerritorialResults>(() => {
     const parrishes = results.value.filter(result => result.district !== 'NACIONAL');
 
     const lists = parrishes
@@ -75,7 +75,7 @@ export const useResults = () => {
     return { lists, nominees, blanks, nulls, abstention, countings };
   });
 
-  const nationalResults = computed(() => {
+  const nationalResults = computed<NationalResults>(() => {
     const result = results.value.find(({ district }) => district === 'NACIONAL');
     const { lists = [] } = result || {};
 

@@ -6,11 +6,11 @@
       <div>
         <h3>{{ message('battlegrounds.hotspots.title') }}</h3>
         <p class="note">{{ message('battlegrounds.hotspots.caption') }}</p>
-        <Hotspots :lists="props.results.lists" />
+        <Hotspots :lists="props.territorial.lists" />
       </div>
       <TerritorialMap
-        :lists="props.results.lists"
-        :countings="props.results.countings" />
+        :lists="props.territorial.lists"
+        :countings="props.territorial.countings" />
     </div>
   </div>
 </template>
@@ -19,13 +19,10 @@
 import { useI10n } from '/@/composables';
 import TerritorialMap from './TerritorialMap.vue';
 import Hotspots from './Hotspots.vue';
-import type { List } from '/@/types';
+import type { TerritorialResults } from '/@/types';
 
 const props = defineProps<{
-  results: {
-    lists: Record<string, List[]>;
-    countings: Record<string, number>;
-  };
+  territorial: TerritorialResults;
 }>();
 
 const { message } = useI10n();

@@ -6,7 +6,7 @@
   <ParliamentArc
     :nominees="nominees"
     :lists="nationalResults.lists" />
-  <Battleground :results="parrishResults" />
+  <Battleground :territorial="parrishResults" />
   <Coalitions :nominees="nominees" />
   <Historics :current="nationalResults" />
 </template>
