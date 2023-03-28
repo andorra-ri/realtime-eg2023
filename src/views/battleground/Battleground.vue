@@ -2,15 +2,19 @@
   <div class="container">
     <h2>{{ message('battlegrounds.title') }}</h2>
     <p>{{ message('battlegrounds.caption') }}</p>
-    <div class="container columns columns--reverse columns--middle">
-      <div>
-        <h3>{{ message('battlegrounds.hotspots.title') }}</h3>
-        <p class="note">{{ message('battlegrounds.hotspots.caption') }}</p>
-        <Hotspots :lists="props.territorial.lists" />
-      </div>
-      <TerritorialMap
-        :lists="props.territorial.lists"
-        :countings="props.territorial.countings" />
+    <div class="container">
+      <h3>{{ message('battlegrounds.territorial.title') }}</h3>
+      <p class="note">{{ message('battlegrounds.territorial.caption') }}</p>
+      <section class="columns columns--reverse columns--middle">
+        <div>
+          <h3>{{ message('battlegrounds.hotspots.title') }}</h3>
+          <p class="note">{{ message('battlegrounds.hotspots.caption') }}</p>
+          <Hotspots :lists="props.territorial.lists" />
+        </div>
+        <TerritorialMap
+          :lists="props.territorial.lists"
+          :countings="props.territorial.countings" />
+      </section>
     </div>
   </div>
 </template>
