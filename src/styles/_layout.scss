@@ -54,6 +54,16 @@
   }
 }
 
+.confidence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fbfbfb;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  padding-bottom: 1rem; 
+}
+
 @keyframes countdown {
   100% { transform: translate(0); }
 }

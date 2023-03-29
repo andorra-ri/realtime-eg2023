@@ -1,7 +1,13 @@
 <template>
-  <header class="container">
+  <header class="container header">
     <h1>{{ message('title') }}<em>{{ message('subtitle') }}</em></h1>
     <p>{{ message('caption') }}</p>
+    <div class="confidence">
+      <p class="note">{{ message('confidence.title') }}</p>
+      <SuperTrafficLight
+        :national="nationalResults"
+        :territorial="parrishResults" />
+    </div>
     <p class="note">{{ message('last_update', { time: formatDate(lastUpdate) }) }}</p>
   </header>
   <ParliamentArc
@@ -28,6 +34,7 @@
 
 <script setup lang="ts">
 import { useI10n, useResults, useCountdown } from '/@/composables';
+import { SuperTrafficLight } from '/@/components';
 import { ParliamentArc, Battleground, Coalitions, MainParties, NewParties, NonValidVotes } from '/@/views';
 import config from '/@/config.yaml';
 

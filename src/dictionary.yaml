@@ -26,10 +26,11 @@ parrishes:
   EE: Escaldes-Engordany
 
 confidence:
+  title: "Nivell de confiança dels resultats amb l'estat actual d'avançament de l'escrutini:"
   insufficient: Insuficient
-  weak: Feble
-  consolidated: Consolidat
-  strong: Fort
+  weak: Fiabilitat Feble
+  consolidated: Fiabilitat Mitjana
+  strong: Fiabilitat Forta
 
 arc:
   title: Com quedaria el Consell General ara mateix? 
