@@ -47,6 +47,8 @@ battlegrounds:
   national:
     title: La batalla nacional
     caption: Els catorze escons que es reparteixen a tot el país es distribueixen de manera proporcional entre totes les candidatures que hagin aconseguit com a mínim un 7,14% dels vots vàlids. 
+    description: A partir de la suma dels vots vàlids, s’estableix quant costa un escó. Després, les candidatures adquireixen escons dividint el nombre de vots que han obtingut pel cost de l’escó. Els escons que quedin per repartir, es reparteixen a les candidatures que ja tenen escons i que tinguin una resta de vots més gran (la resta és la diferència entre els vots de cada candidatura i els vots utilitzats per adquirir escons).
+    calculation: Com s'assignen els escons?
 
 coalitions:
   title: Qui té més opcions de governar? 

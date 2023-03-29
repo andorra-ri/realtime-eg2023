@@ -6,3 +6,4 @@ export { default as BubbleTimeline } from './BubbleTimeline.vue';
 export { default as ConfidenceTrafficLight } from './ConfidenceTrafficLight.vue';
 export { default as VotesBubble } from './VotesBubble.vue';
 export { default as PartyRun } from './PartyRun.vue';
+export { default as Expander } from './Expander.vue';

@@ -4,7 +4,7 @@
     <p>{{ message('battlegrounds.caption') }}</p>
     <div class="container">
       <h3>{{ message('battlegrounds.territorial.title') }}</h3>
-      <p class="note">{{ message('battlegrounds.territorial.caption') }}</p>
+      <p>{{ message('battlegrounds.territorial.caption') }}</p>
       <section class="columns columns--reverse columns--middle">
         <div>
           <h3>{{ message('battlegrounds.hotspots.title') }}</h3>
@@ -16,15 +16,19 @@
       </section>
     </div>
     <section class="container">
-      <h3>{{ message('battlegrounds.national.title') }}</h3>
-      <p class="note">{{ message('battlegrounds.national.caption') }}</p>
+      <h3>{{ message('battlegrounds.national.title') }} </h3>
+      <p>{{ message('battlegrounds.national.caption') }}</p>
       <NationalTable :results="props.national" />
+      <Expander :toggler="message('battlegrounds.national.calculation')">
+        {{ message('battlegrounds.national.description') }}
+      </Expander>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useI10n } from '/@/composables';
+import { Expander } from '/@/components';
 import TerritorialMap from './TerritorialMap.vue';
 import Hotspots from './Hotspots.vue';
 import NationalTable from './NationalTable.vue';

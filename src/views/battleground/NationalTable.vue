@@ -66,7 +66,7 @@ const extended = ref(false);
 
 <style lang="scss" scoped>
 .national-table {
-  margin: 2rem auto;
+  margin: 2rem auto 0;
   border: 1px solid #0001;
 
   caption {
