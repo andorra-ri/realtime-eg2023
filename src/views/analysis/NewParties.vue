@@ -1,7 +1,7 @@
 <template>
   <section class="container">
-    <h3>{{ message('analysis.new_parties.title') }}</h3>
-    <p class="note">{{ message('analysis.new_parties.caption') }}</p>
+    <h2>{{ message('analysis.new_parties.title') }}</h2>
+    <p>{{ message('analysis.new_parties.caption') }}</p>
     <PartyRun :results="props.results" />
   </section>
 </template>

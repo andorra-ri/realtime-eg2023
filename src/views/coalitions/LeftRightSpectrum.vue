@@ -3,7 +3,6 @@
     <I10n tag="h3" path="coalitions.left_right.title">
       <template #vs><em>vs</em></template>
     </I10n>
-    <p class="note">{{ message('coalitions.left_right.caption') }}</p>
     <SeatsStackBar
       :nominees="props.nominees"
       :grouper="grouper"

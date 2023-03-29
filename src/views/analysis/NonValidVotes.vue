@@ -3,11 +3,11 @@
     <h3>{{ message('analysis.no_votes.title') }}</h3>
     <p>{{ message('analysis.no_votes.caption') }}</p>
     <BubbleTimeline :data="abstention" :max="100" unit="%" />
-    <p class="note">{{ message('historic.no_votes.abstention') }}</p>
+    <p class="note">{{ message('analysis.no_votes.abstention') }}</p>
     <BubbleTimeline :data="blanks" :max="100" unit="%" />
-    <p class="note">{{ message('historic.no_votes.blanks') }}</p>
+    <p class="note">{{ message('analysis.no_votes.blanks') }}</p>
     <BubbleTimeline :data="nulls" :max="100" unit="%" />
-    <p class="note">{{ message('historic.no_votes.nulls') }}</p>
+    <p class="note">{{ message('analysis.no_votes.nulls') }}</p>
   </section>
 </template>
 

@@ -8,7 +8,6 @@
       <section class="columns columns--reverse columns--middle">
         <div>
           <h3>{{ message('battlegrounds.hotspots.title') }}</h3>
-          <p class="note">{{ message('battlegrounds.hotspots.caption') }}</p>
           <Hotspots :lists="props.territorial.lists" />
         </div>
         <TerritorialMap

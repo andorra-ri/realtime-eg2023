@@ -1,6 +1,7 @@
 title: '#EG2023'
-subtitle: Escrutini en temps real
-last_update: Última actualització a les {time}
+subtitle: Resultats, projeccions i anàlisi en temps real
+caption: Des d’AR+I hem seleccionat les sis preguntes més rellevants per entendre els resultats de les eleccions generals d’Andorra del 2023 i us oferim les respostes de manera visual i en temps real.
+last_update: 'Última actualització: {time}'
 
 list: Llista
 votes: Vots
@@ -30,45 +31,47 @@ confidence:
   strong: Fort
 
 arc:
+  title: Com quedaria el Consell General ara mateix? 
   votes_list: Vots
   seats_party: Escons
 
 battlegrounds:
-  title: Battleground Races
-  caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+  title: Com està avançant l’escrutini?
+  caption: Quins són els escons més disputats ara mateix?
   territorial:
-    title: Territorial
-    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    title: Les batalles territorials
+    caption: Els dos escons que es reparteixen a cada parròquia van a parar a la candidatura que obté més vots. Us oferim l’evolució dels resultats a cada parròquia i ens fixem especialment en aquelles on les diferències són més minses.
   hotspots:
-    title: Hotspots
-    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    title: Punts calents
     calm: Tot tranquil a la vil·la del pingüí
   national:
-    title: National
-    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    title: La batalla nacional
+    caption: Els catorze escons que es reparteixen a tot el país es distribueixen de manera proporcional entre totes les candidatures que hagin aconseguit com a mínim un 7,14% dels vots vàlids. 
 
 coalitions:
-  title: Pactòmetre
-  caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+  title: Qui té més opcions de governar? 
+  caption1: Demòcrates i PS SDP + partien com les dues úniques forces amb possibilitats d’acostar-se a la majoria absoluta dels escons i, per tant, de liderar el futur Govern.
+  caption2: Aconseguirà Demòcrates superar el desgast de 12 anys al Govern i d’una legislatura duríssima? Aconseguiran els socialdemòcrates capitalitzar els vots dels desencantats i sumar prou com per esdevenir una alternativa? Quant poden aportar la resta de forces polítiques?
+  instructions: Us mostrem quant s’acosta a la majoria cadascuna de les coalicions creades al voltant dels dos aspirants al govern i us permetem jugar amb un generador de pactes per veure quant pot sumar cada combinació.
 
   left_right:
-    title: Progressistes {vs} Conservadors
-    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aliquam id nostrum saepe quis eos, pariatur ad voluptatum alias atque culpa voluptates, odio error architecto perferendis placeat doloribus beatae impedit.
+    title: PS SDP + {vs} Demòcrates
   play:
-    title: Crea la teva coalició
-    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    title: Pactòmetre
+    caption: Crea la teva coalició
 
 analysis:
-  title: Lorem ipsum
-  caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-  
+  title: Com ha evolucionat el suport als partits en relació a les EG2019?
+  caption: Ens preguntem, aquí, en quina mesura els partits han estat capaços de conservar o ampliar el suport que havien rebut l’any 2019. Ho mesurem comparant el percentatge de vots obtinguts en relació al cens electoral.
+
   new_parties:
-    title:
-    caption:
+    title: Entraran els partits nous?
+    caption: El primer repte d’un partit nou és sempre mirar d’aconseguir prou suports com per aconseguir representació parlamentària. Ho aconseguiran els tres partits que debuten en aquests comicis? Com de prop o de lluny es queden d’aquest objectiu? Quant de coixí tenen els qui estan assolint aquesta fita?
     threshold: Vots per obtenir representació
 
   no_votes:
-    title: Què voten els que no voten
-    caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    blanks: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    nulls: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    title: Què voten els qui no voten?
+    caption: No tots els ciutadans amb dret a vot l’exerceixen i no tots els qui ho fan voten per una candidatura. Mesurem, aquí, el vot dels qui no volen participar, dels qui no han trobat la candidatura que més els convenç o dels qui han emès un vot d’esmena a la totalitat al nostre sistema.
+    abstention: Abstenció
+    blanks: Vots blancs
+    nulls: Vots nulls

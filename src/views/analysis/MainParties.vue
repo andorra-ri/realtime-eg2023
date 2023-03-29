@@ -1,7 +1,5 @@
 <template>
   <section class="container">
-    <h3>{{ message('analysis.main_parties.title') }}</h3>
-    <p class="note">{{ message('analysis.main_parties.caption') }}</p>
     <div class="bubbles">
       <article v-for="bubble in bubbles" :key="bubble.name">
         <VotesBubble
@@ -17,7 +15,6 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useI10n } from '/@/composables';
 import { VotesBubble } from '/@/components';
 import { round, rescale } from '/@/utils';
 import type { NationalResults } from '/@/types';
@@ -25,8 +22,6 @@ import type { NationalResults } from '/@/types';
 const props = defineProps<{
   results: NationalResults;
 }>();
-
-const { message } = useI10n();
 
 const CENSUS_RATIO: Record<string, number> = {
   recJeO0Mu4TSk8SPf: 23.02, // DA

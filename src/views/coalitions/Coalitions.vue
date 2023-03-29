@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <h2>{{ message('coalitions.title') }}</h2>
-    <p>{{ message('coalitions.caption') }}</p>
+    <p>{{ message('coalitions.caption1') }}</p>
+    <p>{{ message('coalitions.caption2') }}</p>
+    <p class="note">{{ message('coalitions.instructions') }}</p>
     <LeftRightSpectrum :nominees="props.nominees" />
     <CoalitionPlayer :nominees="props.nominees" />
   </div>

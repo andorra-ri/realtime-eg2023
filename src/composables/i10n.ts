@@ -30,7 +30,7 @@ export const useI10n = () => {
     return entry.replace(REPLACE_REGEX, (match, key) => object?.[key.trim()] || match);
   };
 
-  const formatDate = (date: Date) => date.toLocaleTimeString([], state.dateFormat);
+  const formatDate = (date: Date) => date.toLocaleTimeString(['ca'], state.dateFormat);
 
   const I10n: FunctionalComponent<I10nProps> = (props, ctx) => {
     const entry = objectPath(state.messages, props.path) as string;

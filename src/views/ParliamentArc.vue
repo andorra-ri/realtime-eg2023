@@ -14,7 +14,7 @@
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { HalfDonut } from '/@/components';
-import { indexate, sum, groupBy } from '/@/utils';
+import { sum, groupBy } from '/@/utils';
 import type { Nominee, List } from '/@/types';
 
 const props = defineProps<{
