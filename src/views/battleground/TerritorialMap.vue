@@ -35,7 +35,7 @@ const colors = computed(() => {
   const UNASSIGNED_COLOR = '#f4f4f4';
   return Object.entries(props.lists).reduce((acc, [parrish, lists]) => {
     const winner = isTie(lists.slice(0, 2)) ? undefined : lists[0];
-    acc[parrish] = winner?.nominees?.[0].party.color || UNASSIGNED_COLOR;
+    acc[parrish] = winner?.color || UNASSIGNED_COLOR;
     return acc;
   }, {} as Record<string, string>);
 });
