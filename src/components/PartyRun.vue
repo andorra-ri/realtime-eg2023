@@ -28,8 +28,8 @@ import { useI10n } from '/@/composables';
 import { min, max, rescale } from '/@/utils';
 import type { NationalResults } from '/@/types';
 
-const MIN = 5;
-const MAX = 100 - MIN;
+const MIN = 10;
+const MAX = 95;
 
 const props = defineProps<{
   results: NationalResults;
@@ -52,6 +52,7 @@ const lists = computed(() => newLists.value.map(list => {
 </script>
 
 <style lang="scss" scoped>
+/* stylelint-disable no-descending-specificity */
 .run {
   --bar-height: 1rem;
 
@@ -121,5 +122,8 @@ const lists = computed(() => newLists.value.map(list => {
 
     em { font-size: 1.7rem; }
   }
+
+  &:hover &__party { opacity: 0.25; }
+  &__party:hover { opacity: 1 !important; }
 }
 </style>
