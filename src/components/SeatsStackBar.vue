@@ -83,14 +83,14 @@ const groups = computed(() => {
       content: '';
       background: #0008;
       width: 2px;
-      height: 2.5rem;
+      height: 3.5rem;
       margin: 0.25rem auto 0;
     }
   }
 
   &__groups {
     display: flex;
-    height: 2rem;
+    height: 3rem;
     background-image: linear-gradient(
       315deg,
       transparent 25%,
