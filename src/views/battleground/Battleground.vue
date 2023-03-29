@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <h2>{{ message('battlegrounds.title') }}</h2>
-    <p>{{ message('battlegrounds.caption') }}</p>
     <div class="container">
       <h3>{{ message('battlegrounds.territorial.title') }}</h3>
       <p>{{ message('battlegrounds.territorial.caption') }}</p>

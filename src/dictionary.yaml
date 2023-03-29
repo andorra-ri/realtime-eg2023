@@ -39,7 +39,6 @@ arc:
 
 battlegrounds:
   title: Com està avançant l’escrutini?
-  caption: Quins són els escons més disputats ara mateix?
   territorial:
     title: Les batalles territorials
     caption: Els dos escons que es reparteixen a cada parròquia van a parar a la candidatura que obté més vots. Us oferim l’evolució dels resultats a cada parròquia i ens fixem especialment en aquelles on les diferències són més minses.
@@ -62,7 +61,7 @@ coalitions:
     title: PS SDP + {vs} Demòcrates
   play:
     title: Pactòmetre
-    caption: Crea la teva coalició
+    caption: Selecciona els partits que consideris que poden governar junts i crea la teva coalició.
 
 analysis:
   title: Com ha evolucionat el suport als partits en relació a les EG2019?
