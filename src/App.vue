@@ -10,12 +10,12 @@
     :territorial="parrishResults"
     :national="nationalResults" />
   <Coalitions :nominees="nominees" />
-  <Historics :current="nationalResults" />
+  <Analysis :results="nationalResults" />
 </template>
 
 <script setup lang="ts">
 import { useI10n, useResults, useCountdown } from '/@/composables';
-import { ParliamentArc, Battleground, Coalitions, Historics } from '/@/views';
+import { ParliamentArc, Battleground, Coalitions, Analysis } from '/@/views';
 import config from '/@/config.yaml';
 
 const { message, formatDate } = useI10n();
