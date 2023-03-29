@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h3>{{ message('analysis.no_votes.title') }}</h3>
+    <h2>{{ message('analysis.no_votes.title') }}</h2>
     <p>{{ message('analysis.no_votes.caption') }}</p>
     <BubbleTimeline :data="abstention" :max="100" unit="%" />
     <p class="note">{{ message('analysis.no_votes.abstention') }}</p>
