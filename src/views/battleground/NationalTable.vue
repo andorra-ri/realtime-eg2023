@@ -1,4 +1,11 @@
 <template>
+  <aside>
+    <p class="percent" :style="`--counting:${countedNational}`">
+      {{ message('counted') }} <strong>{{ Math.round(countedNational * 100) }}%</strong>
+    </p>
+    <p>{{ message('qe') }} <strong>{{ props.results.qe }}</strong></p>
+    <ConfidenceTrafficLight :counting="countedNational" />
+  </aside>
   <table class="national-table">
     <tbody>
       <tr v-for="list in lists" :key="list.id" class="list">
@@ -40,6 +47,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
+import { ConfidenceTrafficLight } from '/@/components';
 import type { NationalResults } from '/@/types';
 
 const props = defineProps<{
@@ -61,10 +69,21 @@ const withSymbol = (value: number) => {
   return formatter.format(value);
 };
 
+const countedNational = computed(() => {
+  const { valids = 0, blanks = 0, nulls = 0, participation = 1 } = props.results;
+  return ((valids + blanks + nulls) / participation) || 0;
+});
+
 const extended = ref(false);
 </script>
 
 <style lang="scss" scoped>
+aside {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
 .national-table {
   margin: 2rem auto 0;
   border: 1px solid #0001;
