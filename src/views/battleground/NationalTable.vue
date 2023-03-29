@@ -21,7 +21,7 @@
         <td v-if="extended" class="list__votes-reminder">
           <span v-if="list.seats">
             <em :class="{ benefit: list.seatsByReminder }">
-              {{ list.seatsByReminder }}
+              {{ withSymbol(list.seatsByReminder) }}
             </em>
             <i>{{ message('seats_by_reminder') }}</i>
           </span>
@@ -56,6 +56,11 @@ const lists = computed(() => [...props.results.lists]
     return { ...list, seatsByVotes, seatsByReminder };
   }));
 
+const withSymbol = (value: number) => {
+  const formatter = new Intl.NumberFormat('ca', { signDisplay: 'exceptZero' });
+  return formatter.format(value);
+};
+
 const extended = ref(false);
 </script>
 
@@ -86,6 +91,7 @@ const extended = ref(false);
     text-align: center;
     line-height: 1.1;
     vertical-align: middle;
+    background: #fafafa;
 
     em {
       display: block;
@@ -100,10 +106,18 @@ const extended = ref(false);
     }
   }
 
-  &__name { text-align: left !important; }
+  &__name {
+    background: #fff !important;
+    text-align: left !important;
+  }
 
   // stylelint-disable no-descending-specificity
-  &__seats em { font-size: 1.5rem !important; }
+  &__seats {
+   border-right: 1px solid #0001;
+   background: #fff !important;
+
+    em { font-size: 1.5rem !important; }
+  }
 
   &__reminder em,
   &__votes-reminder em { font-weight: normal !important; }

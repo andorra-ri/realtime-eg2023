@@ -4,7 +4,6 @@
     <p>{{ message('caption') }}</p>
     <p class="note">{{ message('last_update', { time: formatDate(lastUpdate) }) }}</p>
   </header>
-  <h2>{{ message('arc.title') }}</h2>
   <ParliamentArc
     :nominees="nominees"
     :lists="nationalResults.lists" />

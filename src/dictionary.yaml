@@ -43,7 +43,7 @@ battlegrounds:
     caption: Els dos escons que es reparteixen a cada parròquia van a parar a la candidatura que obté més vots. Us oferim l’evolució dels resultats a cada parròquia i ens fixem especialment en aquelles on les diferències són més minses.
   hotspots:
     title: Punts calents
-    calm: Tot tranquil a la vil·la del pingüí
+    calm: No hi ha parròquies amb diferències mínimes en el recompte ara mateix.
   national:
     title: La batalla nacional
     caption: Els catorze escons que es reparteixen a tot el país es distribueixen de manera proporcional entre totes les candidatures que hagin aconseguit com a mínim un 7,14% dels vots vàlids. 

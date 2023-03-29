@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <h2>{{ message('arc.title') }}</h2>
     <fieldset class="options">
       <label v-for="name in SHOW_OPTIONS" :key="name">
         <input v-model="showBy" :value="name" type="radio">

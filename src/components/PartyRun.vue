@@ -73,7 +73,10 @@ const lists = computed(() => newLists.value.map(list => {
   max-width: 30rem;
   margin: 5rem auto 7rem;
 
-  &-container { padding: 1px; }
+  &-container {
+    padding: 1px;
+    margin: 2rem 0;
+  }
 
   &__qe,
   &__party {
@@ -120,7 +123,10 @@ const lists = computed(() => newLists.value.map(list => {
     transform: translate(-50%, calc(-100% + var(--bar-height) + 0.25rem));
     max-width: 6rem;
 
-    em { font-size: 1.7rem; }
+    em {
+      font-size: 1.7rem;
+      color: #80b918;
+    }
   }
 
   &:hover &__party { opacity: 0.25; }

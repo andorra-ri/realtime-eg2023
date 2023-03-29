@@ -29,7 +29,6 @@ const props = defineProps<{
 const CENSUS_RATIO: Record<string, number> = {
   recJeO0Mu4TSk8SPf: 23.02, // DA
   recX9CRRFH9yLkBFR: 23.79, // PS + SDP
-  // rech48CVJoc7qCJX3: 15, // L'A
 };
 
 const { message } = useI10n();
