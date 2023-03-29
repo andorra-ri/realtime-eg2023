@@ -64,7 +64,7 @@ export const useResults = () => {
 
     const countings = parrishes.reduce((acc, result) => {
       const { valids, blanks, nulls, participation } = result;
-      acc[result.district] = (valids + blanks + nulls) / participation;
+      acc[result.district] = ((valids + blanks + nulls) / participation) || 0;
       return acc;
     }, {} as Record<string, number>);
 

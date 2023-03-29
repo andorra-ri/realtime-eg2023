@@ -2,7 +2,7 @@
   <section>
     <div class="counting">
       <div class="percent" :style="`--counting:${props.counting}`">
-        {{ message('counting') }} <strong>{{ Math.round(props.counting * 100) }}%</strong>
+        {{ message('counted') }} <strong>{{ Math.round(props.counting * 100) }}%</strong>
       </div>
       <ConfidenceTrafficLight :counting="props.counting" />
     </div>
