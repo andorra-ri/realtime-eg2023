@@ -3,16 +3,16 @@
     <div class="projection">
       <span>
         <em>{{ props.reference }}%</em>
-        <small>EG2023</small>
+        <small>EG2019</small>
       </span>
     </div>
-    <em>{{ props.current }}%</em>
-    <small>EG2023</small>
+    <em>{{ label }}%</em>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { round } from '/@/utils';
 
 const MAX_VALUE = 50;
 const MAX_DIAMETER = 200;
@@ -25,6 +25,11 @@ const props = defineProps<{
 
 const current = computed(() => MAX_DIAMETER * Math.sqrt(props.current / MAX_VALUE));
 const reference = computed(() => MAX_DIAMETER * Math.sqrt(props.reference / MAX_VALUE));
+const label = computed(() => {
+  const formatter = new Intl.NumberFormat('ca', { signDisplay: 'exceptZero' });
+  return formatter.format(round(props.current - props.reference, 2));
+});
+
 </script>
 
 <style lang="scss" scoped>
@@ -44,7 +49,7 @@ const reference = computed(() => MAX_DIAMETER * Math.sqrt(props.reference / MAX_
   text-align: center;
   pointer-events: none;
 
-  em { font-size: 1.5em; }
+  em { font-size: 1em; }
 
   small {
     font-weight: normal;
