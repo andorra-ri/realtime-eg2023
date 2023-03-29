@@ -77,3 +77,11 @@ analysis:
     abstention: Abstenció
     blanks: Vots blancs
     nulls: Vots nulls
+
+closure: Hi ha moltes més preguntes i les podríem respondre de manera més detallada, però hem volgut apostar per oferir el màxim d’informació en el mínim espai possible, de manera que pugueu seguir la nit electoral de les EG2023 anant i tornant entre les sis preguntes que ens han semblat més importants de respondre.
+
+credits:
+  data: "Font de les dades brutes: Govern d'Andorra."
+  analysis: "Model d'anàlisi i desenvolupament: Andorra Recerca + Innovació. Més informació a "
+
+disclaimer: "Les dades que oferim en aquest lloc web són, en alguns casos, dades oficials, en d’altres casos, projeccions a partir de dades oficials i, en el cas de la distribució de vots entre les forces liberals, una projecció a partir d’escenaris probables basats en l’anàlisi de resultats i de programes electorals. Els resultats oficials en vots absoluts els podeu trobar al web " 

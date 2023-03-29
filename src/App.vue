@@ -14,6 +14,16 @@
   <MainParties :results="nationalResults" />
   <NewParties :results="nationalResults" />
   <NonValidVotes :results="nationalResults" />
+  <section class="container">
+    <p>{{ message('closure') }}</p>
+  </section>
+  <footer class="footer">
+    <p class="logo"><img src="/@/assets/logo-ari-ca.png"></p>
+    <p class="note">{{ message('credits.data') }}</p>
+    <p class="note">{{ message('credits.analysis') }} <a href="https://ari.ad/projectes/eg2023" target="blank">https://ari.ad/projectes/eg2023</a></p>
+    <p class="note">{{ message('disclaimer') }} <a href="https://www.eleccions.ad" target="blank">https://www.eleccions.ad</a></p>
+    <p>2023 &copy; Andorra Recerca + Innovació</p>
+  </footer>
 </template>
 
 <script setup lang="ts">
