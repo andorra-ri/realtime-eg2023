@@ -62,6 +62,11 @@ analysis:
   title: Lorem ipsum
   caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
   
+  new_parties:
+    title:
+    caption:
+    threshold: Vots per obtenir representació
+
   no_votes:
     title: Què voten els que no voten
     caption: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
