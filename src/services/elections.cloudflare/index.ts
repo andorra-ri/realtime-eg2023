@@ -42,7 +42,8 @@ const getLists = async (): Promise<List[]> => {
       parties: list.parties.map(partyId => partiesDict[partyId]),
       nominees: list.nominees.map(nominee => {
         const party = partiesDict[nominee.party[0]];
-        return { ...nominee, party };
+        const photo = UrlFromAttachment(nominee.photo);
+        return { ...nominee, party, photo };
       }),
     };
   });

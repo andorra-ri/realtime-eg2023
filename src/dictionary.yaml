@@ -32,11 +32,12 @@ confidence:
   consolidated: Fiabilitat Mitjana
   strong: Fiabilitat Forta
 
-arc:
+parliament:
   title: Com quedaria el Consell General ara mateix? 
   votes_list: Vots
-  seats_coalition: Coalicions nacionals
+  seats_coalition: Coalicions
   seats_party: Escons
+  nominees: Consellers
 
 battlegrounds:
   title: Com està avançant l’escrutini?

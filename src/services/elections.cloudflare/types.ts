@@ -45,6 +45,7 @@ export type ListDTO = {
     _created: string;
     name: string;
     party: RecordId[];
+    photo: AttachmentDTO[];
   }[];
   district: string[];
 };

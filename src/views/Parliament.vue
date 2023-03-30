@@ -1,20 +1,25 @@
 <template>
   <section class="container">
-    <h2>{{ message('arc.title') }}</h2>
+    <h2>{{ message('parliament.title') }}</h2>
     <fieldset class="options">
       <label v-for="name in SHOW_OPTIONS" :key="name">
         <input v-model="showBy" :value="name" type="radio">
-        <span>{{ message(`arc.${name}`) }}</span>
+        <span>{{ message(`parliament.${name}`) }}</span>
+      </label>
+      <label>
+        <input v-model="showBy" value="nominees" type="radio">
+        <span>{{ message('parliament.nominees') }}</span>
       </label>
     </fieldset>
-    <HalfDonut :data="data" />
+    <NomineesList v-if="showBy === 'nominees'" :nominees="nominees" />
+    <HalfDonut v-else :data="data" />
   </section>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
-import { HalfDonut } from '/@/components';
+import { HalfDonut, NomineesList } from '/@/components';
 import { sum, indexate, groupBy } from '/@/utils';
 import type { Nominee, List } from '/@/types';
 
@@ -58,14 +63,14 @@ const seatsByCoalition = computed(() => {
 });
 
 const SHOW_OPTIONS = ['votes_list', 'seats_coalition', 'seats_party'] as const;
-const showBy = ref<typeof SHOW_OPTIONS[number]>('seats_party');
+const showBy = ref<typeof SHOW_OPTIONS[number] | 'nominees'>('seats_party');
 const data = computed(() => {
   const options = {
     votes_list: votesByList.value,
     seats_coalition: seatsByCoalition.value,
     seats_party: seatsByParty.value,
   };
-  return options[showBy.value];
+  return showBy.value !== 'nominees' ? options[showBy.value] : [];
 });
 </script>
 

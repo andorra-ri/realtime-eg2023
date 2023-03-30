@@ -16,6 +16,7 @@ export type Party = {
 export type Nominee = {
   name: string;
   party: Party;
+  photo?: string;
 };
 
 export type List = {

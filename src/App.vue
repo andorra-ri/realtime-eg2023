@@ -10,7 +10,7 @@
     </div>
     <p class="note">{{ message('last_update', { time: formatDate(lastUpdate) }) }}</p>
   </header>
-  <ParliamentArc
+  <Parliament
     :nominees="nominees"
     :lists="nationalResults.lists" />
   <Battleground
@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { useI10n, useResults, useCountdown } from '/@/composables';
 import { SuperTrafficLight } from '/@/components';
-import { ParliamentArc, Battleground, Coalitions, MainParties, NewParties, NonValidVotes } from '/@/views';
+import { Parliament, Battleground, Coalitions, MainParties, NewParties, NonValidVotes } from '/@/views';
 import config from '/@/config.yaml';
 
 const { message, formatDate } = useI10n();
