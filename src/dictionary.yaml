@@ -86,3 +86,8 @@ credits:
   analysis: "Model d'anàlisi i desenvolupament: Andorra Recerca + Innovació. Més informació a "
 
 disclaimer: "Les dades que oferim en aquest lloc web són, en alguns casos, dades oficials, en d’altres casos, projeccions a partir de dades oficials i, en el cas de la distribució de vots entre les forces liberals, una projecció a partir d’escenaris probables basats en l’anàlisi de resultats i de programes electorals. Els resultats oficials en vots absoluts els podeu trobar al web " 
+
+errors:
+  RETRIEVE_LISTS_ERROR: S'ha produït un error en carregar les llistes, torna-ho a intentar en breu
+  RETRIEVE_HISTORIC_ERROR: S'ha produït un error en carregar les dades històriques, torna-ho a intentar en breu
+  RETRIEVE_RESULTS_ERROR: S'ha produït un error en actualitzar els resultats, torna-ho a intentar en breu

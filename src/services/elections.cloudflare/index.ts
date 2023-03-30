@@ -21,6 +21,7 @@ const adaptParty = (party: PartyDTO): Party => {
 
 const getLists = async (): Promise<List[]> => {
   const response = await fetch(`${URL}/elections/EG2023`);
+  if (!response.ok) throw new Error('RETRIEVE_LISTS_ERROR');
   const { lists, parties }: { lists: ListDTO[], parties: PartyDTO[] } = await response.json();
 
   const partiesDict = indexate(parties.map(adaptParty), 'id');
@@ -44,6 +45,7 @@ const getLists = async (): Promise<List[]> => {
 
 const getResults = async (): Promise<Results[]> => {
   const response = await fetch(`${URL}/results`);
+  if (!response.ok) throw new Error('RETRIEVE_RESULTS_ERROR');
   const results: ResultsDTO[] = await response.json();
 
   return results.map(result => {
@@ -57,6 +59,7 @@ const getResults = async (): Promise<Results[]> => {
 
 const getHistorics = async (): Promise<Historic[]> => {
   const response = await fetch(`${URL}/historics`);
+  if (!response.ok) throw new Error('RETRIEVE_HISTORIC_ERROR');
   const historics: HistoricDTO[] = await response.json();
   return historics;
 };
