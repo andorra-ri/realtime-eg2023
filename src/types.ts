@@ -10,6 +10,7 @@ export type Party = {
   order: number;
   groups?: string[];
   coalitionLeaderId?: string;
+  coalitionName?: string;
 };
 
 export type Nominee = {

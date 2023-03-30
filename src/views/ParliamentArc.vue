@@ -15,7 +15,7 @@
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { HalfDonut } from '/@/components';
-import { sum, groupBy } from '/@/utils';
+import { sum, indexate, groupBy } from '/@/utils';
 import type { Nominee, List } from '/@/types';
 
 const props = defineProps<{
@@ -45,11 +45,24 @@ const seatsByParty = computed(() => {
   return toArc(groupedNominees, nominees => nominees.length);
 });
 
-const SHOW_OPTIONS = ['votes_list', 'seats_party'] as const;
+const seatsByCoalition = computed(() => {
+  const coalitions = indexate(props.nominees.map(nominee => {
+    const name = nominee.party.coalitionName || nominee.party.name;
+    return { ...nominee.party, name };
+  }), 'id');
+  const groupedSeats = groupBy(props.nominees, nominee => {
+    const id = nominee.party.coalitionLeaderId || nominee.party.id;
+    return coalitions[id];
+  });
+  return toArc(groupedSeats, nominees => nominees.length);
+});
+
+const SHOW_OPTIONS = ['votes_list', 'seats_coalition', 'seats_party'] as const;
 const showBy = ref<typeof SHOW_OPTIONS[number]>('seats_party');
 const data = computed(() => {
   const options = {
     votes_list: votesByList.value,
+    seats_coalition: seatsByCoalition.value,
     seats_party: seatsByParty.value,
   };
   return options[showBy.value];
@@ -59,9 +72,9 @@ const data = computed(() => {
 <style lang="scss">
 .options {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
-  margin: 1rem;
+  margin: 1rem auto 3rem;
 
   input { display: none; }
 

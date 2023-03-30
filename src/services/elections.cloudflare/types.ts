@@ -30,6 +30,7 @@ export type PartyDTO = {
   order: number;
   groups?: string[];
   coalition_leader?: string[];
+  coalition_name?: string;
 };
 
 export type ListDTO = {

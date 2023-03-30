@@ -14,9 +14,14 @@ const UrlFromAttachment = (
 };
 
 const adaptParty = (party: PartyDTO): Party => {
-  const { _id: id, coalition_leader: [coalitionLeaderId] = [], ...rest } = party;
+  const {
+    _id: id,
+    coalition_leader: [coalitionLeaderId] = [],
+    coalition_name: coalitionName,
+    ...rest
+  } = party;
   const logo = UrlFromAttachment(party.logo);
-  return { id, ...rest, logo, coalitionLeaderId };
+  return { id, ...rest, logo, coalitionLeaderId, coalitionName };
 };
 
 const getLists = async (): Promise<List[]> => {
