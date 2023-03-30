@@ -84,7 +84,7 @@ export const useResults = () => {
 
     // First assignation of seats and reminder for each party
     const firstAssignation = lists.map(({ listId, votes }) => {
-      const seats = Math.floor(votes / qe);
+      const seats = Math.floor(votes / qe) || 0;
       const reminder = votes - (qe * seats);
       const list = getList(listId);
       return list && { ...list, votes, seats, reminder };
