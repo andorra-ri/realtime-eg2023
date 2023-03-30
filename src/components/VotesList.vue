@@ -48,10 +48,10 @@ const props = defineProps<{
 
 const { message } = useI10n();
 
-const tie = computed(() => isTie(props.lists.slice(0, 2)));
+const tie = computed(() => isTie((props.lists || []).slice(0, 2)));
 const winnerMargin = computed(() => {
-  const [first, second] = props.lists;
-  return second ? first.votes - second.votes : 0;
+  const [first, second] = props.lists || [];
+  return first && second ? first.votes - second.votes : 0;
 });
 </script>
 
