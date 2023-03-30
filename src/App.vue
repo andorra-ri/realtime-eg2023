@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import { useI10n, useResults, useCountdown } from '/@/composables';
+import { useI10n, useResults, useCountdown, useTimer } from '/@/composables';
 import { SuperTrafficLight } from '/@/components';
 import { Parliament, Battleground, Coalitions, MainParties, NewParties, NonValidVotes } from '/@/views';
 import config from '/@/config.yaml';
@@ -42,5 +42,7 @@ import config from '/@/config.yaml';
 const { message, formatDate } = useI10n();
 const { nationalResults, parrishResults, nominees, updateResults, lastUpdate } = useResults();
 
-// useCountdown(config.TIMEOUT, updateResults);
+useTimer(config.START_TIME, () => {
+  useCountdown(config.TIMEOUT, updateResults);
+});
 </script>
