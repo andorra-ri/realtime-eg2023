@@ -80,6 +80,7 @@ const extended = ref(false);
 <style lang="scss" scoped>
 aside {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 3rem;
 }
