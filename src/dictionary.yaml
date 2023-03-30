@@ -78,7 +78,9 @@ analysis:
     caption: No tots els ciutadans amb dret a vot l’exerceixen i no tots els qui ho fan voten per una candidatura. Mesurem, aquí, el vot dels qui no volen participar, dels qui no han trobat la candidatura que més els convenç o dels qui han emès un vot d’esmena a la totalitat al nostre sistema.
     abstention: Abstenció
     blanks: Vots blancs
-    nulls: Vots nulls
+    nulls: Vots nuls
+    census: del cens electoral
+    participation: de la participació
 
 closure: Hi ha moltes més preguntes i les podríem respondre de manera més detallada, però hem volgut apostar per oferir el màxim d’informació en el mínim espai possible, de manera que pugueu seguir la nit electoral de les EG2023 anant i tornant entre les sis preguntes que ens han semblat més importants de respondre.
 

@@ -9,3 +9,4 @@ export { default as SuperTrafficLight } from './SuperTrafficLight.vue';
 export { default as VotesBubble } from './VotesBubble.vue';
 export { default as PartyRun } from './PartyRun.vue';
 export { default as Expander } from './Expander.vue';
+export { default as Card } from './Card.vue';
