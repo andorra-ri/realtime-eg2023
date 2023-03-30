@@ -20,7 +20,7 @@
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { HalfDonut, NomineesList } from '/@/components';
-import { sum, indexate, groupBy } from '/@/utils';
+import { indexate, groupBy } from '/@/utils';
 import type { Nominee, List } from '/@/types';
 
 const props = defineProps<{
@@ -40,11 +40,6 @@ const toArc = <T>(
       return { label, value, color };
     });
 
-const votesByList = computed(() => {
-  const groupedLists = groupBy(props.lists, list => list);
-  return toArc(groupedLists, lists => sum(lists.map(list => list.votes)));
-});
-
 const seatsByParty = computed(() => {
   const groupedNominees = groupBy(props.nominees, nominee => nominee.party);
   return toArc(groupedNominees, nominees => nominees.length);
@@ -62,11 +57,10 @@ const seatsByCoalition = computed(() => {
   return toArc(groupedSeats, nominees => nominees.length);
 });
 
-const SHOW_OPTIONS = ['votes_list', 'seats_coalition', 'seats_party'] as const;
+const SHOW_OPTIONS = ['seats_coalition', 'seats_party'] as const;
 const showBy = ref<typeof SHOW_OPTIONS[number] | 'nominees'>('seats_party');
 const data = computed(() => {
   const options = {
-    votes_list: votesByList.value,
     seats_coalition: seatsByCoalition.value,
     seats_party: seatsByParty.value,
   };

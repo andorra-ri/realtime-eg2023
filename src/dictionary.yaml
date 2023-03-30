@@ -34,9 +34,8 @@ confidence:
 
 parliament:
   title: Com quedaria el Consell General ara mateix? 
-  votes_list: Vots
   seats_coalition: Coalicions
-  seats_party: Escons
+  seats_party: Partits
   nominees: Consellers
 
 battlegrounds:
