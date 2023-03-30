@@ -34,7 +34,7 @@ const { message } = useI10n();
 const colors = computed(() => {
   const UNASSIGNED_COLOR = '#f4f4f4';
   return Object.entries(props.lists).reduce((acc, [parrish, lists]) => {
-    const winner = isTie(lists.slice(0, 2)) ? undefined : lists[0];
+    const winner = !isTie(lists.slice(0, 2)) && lists[0]?.votes ? lists[0] : undefined;
     acc[parrish] = winner?.color || UNASSIGNED_COLOR;
     return acc;
   }, {} as Record<string, string>);

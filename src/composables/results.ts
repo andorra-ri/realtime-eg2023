@@ -59,7 +59,7 @@ export const useResults = () => {
 
     // Nominees from first list if it's not tied with second
     const nominees = Object.values(lists)
-      .flatMap(_lists => (isTie(_lists.slice(0, 2)) ? [] : _lists[0]?.nominees))
+      .flatMap(_lists => (!isTie(_lists.slice(0, 2)) && _lists[0]?.votes ? _lists[0]?.nominees : []))
       .filter(Boolean);
 
     const countings = parrishes.reduce((acc, result) => {
