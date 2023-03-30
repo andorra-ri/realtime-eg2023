@@ -1,1 +1,1 @@
-export { default as apiService } from './elections.cloudflare';
+export { default as apiService } from './elections.json';
