@@ -18,7 +18,7 @@ const props = defineProps<{
   nominees: Nominee[];
 }>();
 
-const nominees = computed(() => [...props.nominees].sort((a, b) => a.party.order - b.party.order));
+const nominees = computed(() => [...props.nominees].sort((a, b) => b.party.order - a.party.order));
 </script>
 
 <style lang="scss" scoped>
