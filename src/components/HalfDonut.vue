@@ -68,7 +68,7 @@ const items = computed(() => {
   &::after {
     content: '';
     display: block;
-    height: calc(2rem + var(--width));
+    height: calc(1.25 * var(--width));
     transform: translateX(-50%);
     width: 0.25rem;
     background: currentcolor;
@@ -105,7 +105,7 @@ const items = computed(() => {
     transform: translateX(-50%);
     display: none;
     text-align: center;
-    line-height: 1;
+    font-size: 0.85rem;
     z-index: 1;
 
     strong {
