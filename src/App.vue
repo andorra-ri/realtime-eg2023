@@ -30,6 +30,7 @@
     <p class="note">{{ message('disclaimer') }} <a href="https://www.eleccions.ad" target="blank">https://www.eleccions.ad</a></p>
     <p>2023 &copy; Andorra Recerca + Innovació</p>
   </footer>
+  <ToastCenter />
 </template>
 
 <script setup lang="ts">
