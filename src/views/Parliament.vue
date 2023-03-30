@@ -58,7 +58,7 @@ const seatsByCoalition = computed(() => {
 });
 
 const SHOW_OPTIONS = ['seats_coalition', 'seats_party'] as const;
-const showBy = ref<typeof SHOW_OPTIONS[number] | 'nominees'>('seats_party');
+const showBy = ref<typeof SHOW_OPTIONS[number] | 'nominees'>('seats_coalition');
 const data = computed(() => {
   const options = {
     seats_coalition: seatsByCoalition.value,
