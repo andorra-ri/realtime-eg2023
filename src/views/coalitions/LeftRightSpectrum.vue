@@ -31,5 +31,5 @@ const grouper = (nominee: Nominee) => nominee.party.groups?.map(group => SPECTRU
 </script>
 
 <style scoped>
-.container { margin-bottom: 5rem; }
+.container { margin-bottom: 5rem !important; }
 </style>
