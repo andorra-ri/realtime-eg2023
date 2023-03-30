@@ -1,0 +1,22 @@
+.banner {
+  background: #f0f0f0;
+  padding: 2rem;
+  max-width: 80vw;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  z-index: 3;
+
+  &.info {
+    background: #cae9ff;
+    color: #003566;
+    border-color: #00356644;
+
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+  }
+}

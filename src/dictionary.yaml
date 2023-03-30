@@ -94,3 +94,6 @@ errors:
   RETRIEVE_LISTS_ERROR: S'ha produït un error en carregar les llistes, torna-ho a intentar en breu
   RETRIEVE_HISTORIC_ERROR: S'ha produït un error en carregar les dades històriques, torna-ho a intentar en breu
   RETRIEVE_RESULTS_ERROR: S'ha produït un error en actualitzar els resultats, torna-ho a intentar en breu
+
+banner:
+  not_yet: Encara no hi ha dades públiques de l'escrutini. Us oferirem resultats tan bon punt estiguin disponibles. Ja falta menys... 🍿🍿🍿
