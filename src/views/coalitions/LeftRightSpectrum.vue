@@ -20,7 +20,7 @@ const props = defineProps<{
   nominees: Nominee[];
 }>();
 
-const { message, I10n } = useI10n();
+const { I10n } = useI10n();
 
 const SPECTRUM: Record<string, Coalition> = {
   LEFT: { name: 'Progressistes', order: 0 },
@@ -29,3 +29,7 @@ const SPECTRUM: Record<string, Coalition> = {
 
 const grouper = (nominee: Nominee) => nominee.party.groups?.map(group => SPECTRUM[group])[0];
 </script>
+
+<style scoped>
+.container { margin-bottom: 5rem; }
+</style>
