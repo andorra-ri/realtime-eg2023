@@ -59,7 +59,7 @@ const { message, I10n } = useI10n();
 const lists = computed(() => [...props.results.lists]
   .sort((a, b) => b.votes - a.votes)
   .map(list => {
-    const seatsByVotes = Math.floor(list.votes / props.results.qe);
+    const seatsByVotes = Math.floor(list.votes / props.results.qe) || 0;
     const seatsByReminder = list.seats - seatsByVotes;
     return { ...list, seatsByVotes, seatsByReminder };
   }));
