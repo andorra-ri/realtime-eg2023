@@ -1,31 +1,9 @@
 export type RecordId = string;
 
-export type ThumbnailDTO = {
-  url: string;
-  width: number;
-  height: number;
-}
-
-export type AttachmentDTO = {
-  id: string;
-  width: number;
-  height: number;
-  url: string;
-  filename: string;
-  size: number;
-  type: string;
-  thumbnails: {
-    small: ThumbnailDTO;
-    large: ThumbnailDTO;
-    full: ThumbnailDTO;
-  };
-};
-
 export type PartyDTO = {
   _id: RecordId;
   _created: string;
   name: string;
-  logo: AttachmentDTO[];
   color: string;
   order: number;
   groups?: string[];
@@ -45,7 +23,6 @@ export type ListDTO = {
     _created: string;
     name: string;
     party: RecordId[];
-    photo: AttachmentDTO[];
   }[];
   district: string[];
 };

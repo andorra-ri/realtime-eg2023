@@ -1,0 +1,106 @@
+[
+  {
+    "_id": "rec1RrMJClYW10Ysk",
+    "_created": "2023-02-10T22:47:55.000Z",
+    "groups": [
+      "NEW"
+    ],
+    "color": "#4d7397",
+    "order": 5,
+    "name": "Andorra Endavant"
+  },
+  {
+    "_id": "rec4zWgzN41xMZak8",
+    "_created": "2023-03-02T14:44:06.000Z",
+    "color": "#000000",
+    "order": 4,
+    "name": "Per Ordino"
+  },
+  {
+    "_id": "rec9FQSARgIp0kszW",
+    "_created": "2023-02-09T10:34:30.000Z",
+    "coalition_leader": [
+      "recoUh1nGSEpi8li7"
+    ],
+    "groups": [
+      "LEFT"
+    ],
+    "color": "#a32086",
+    "order": 2,
+    "name": "Progressistes SDP"
+  },
+  {
+    "_id": "recCQIQWW0bOVuttp",
+    "_created": "2023-02-09T10:27:03.000Z",
+    "groups": [
+      "NEW"
+    ],
+    "color": "#72c0c0",
+    "order": 7,
+    "name": "Acció"
+  },
+  {
+    "_id": "recHkhWnZYQ6awTa2",
+    "_created": "2023-03-02T14:44:06.000Z",
+    "color": "#00403b",
+    "order": 3,
+    "name": "Agrupament Encampadà"
+  },
+  {
+    "_id": "rech48CVJoc7qCJX3",
+    "_created": "2023-02-02T13:55:38.000Z",
+    "groups": [
+      "TRADITIONAL"
+    ],
+    "color": "#009dc5",
+    "order": 8,
+    "name": "Liberals d'Andorra"
+  },
+  {
+    "_id": "recjBGz6vXs99ZSGh",
+    "_created": "2023-02-09T10:16:40.000Z",
+    "groups": [
+      "NEW"
+    ],
+    "color": "#21737f",
+    "order": 6,
+    "name": "Concòrdia"
+  },
+  {
+    "_id": "reckiXbAVBIgZzh71",
+    "_created": "2023-02-02T13:55:38.000Z",
+    "groups": [
+      "RIGHT",
+      "TRADITIONAL"
+    ],
+    "color": "#f08108",
+    "order": 10,
+    "name": "Demòcrates per Andorra",
+    "coalition_name": "Demòcrates + CC + ACO + UP + Independents"
+  },
+  {
+    "_id": "recnHJwuHoAbWqbzk",
+    "_created": "2023-03-02T14:44:06.000Z",
+    "coalition_leader": [
+      "reckiXbAVBIgZzh71"
+    ],
+    "groups": [
+      "RIGHT"
+    ],
+    "color": "#57287e",
+    "order": 9,
+    "name": "Ciutadans Compromesos"
+  },
+  {
+    "_id": "recoUh1nGSEpi8li7",
+    "_created": "2023-02-02T13:55:38.000Z",
+    "groups": [
+      "LEFT",
+      "TRADITIONAL"
+    ],
+    "color": "#e30614",
+    "order": 1,
+    "name": "Partit Socialdemòcrata",
+    "coalition_name": "Partit Socialdemòcrata Progressistes SDP +"
+  }
+]

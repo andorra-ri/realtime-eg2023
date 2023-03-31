@@ -1,4 +1,4 @@
-import { apiService } from '/@/services';
+import { jsonService } from '/@/services';
 import { useApi } from './api';
 import type { List } from '/@/types';
 
@@ -7,7 +7,7 @@ export const useLists = () => {
     items: lists,
     loadItems: loadLists,
     loading,
-  } = useApi<List[]>(apiService.getLists, []);
+  } = useApi<List[]>(jsonService.getLists, []);
 
   const getList = (id: string) => lists.value.find(list => list.id === id);
 
