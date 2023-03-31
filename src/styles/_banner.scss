@@ -5,12 +5,18 @@
   margin: 0 auto;
   border: 1px solid #e0e0e0;
   z-index: 3;
+  display: flex;
 
   &.info {
     background: #cae9ff;
     color: #003566;
     border-color: #00356644;
+  }
 
+  &.warning {
+    background: #f5bd01;
+    color: #6e622a;
+    border: none;
   }
 
   &.fixed {
@@ -18,5 +24,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);;
+  }
+
+  &.fixed.bottom {
+    top: unset;
+    bottom: 0;
   }
 }

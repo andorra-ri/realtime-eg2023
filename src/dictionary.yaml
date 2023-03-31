@@ -97,3 +97,5 @@ errors:
 
 banner:
   not_yet: Encara no hi ha dades públiques de l'escrutini. Us oferirem resultats tan bon punt estiguin disponibles. Ja falta menys... 🍿🍿🍿
+  not_enough: Ja ha començat l'escrutini però encara no disposem de dades de totes les circumscripcions.
+  big_problem: "No s'han pogut assignar els 28 consellers perquè s'ha produït un empat en alguna parròquia o perquè s'ha donat una combinació de resultats a la circumscripció nacional que no permet assignar els escons en joc." 
