@@ -34,5 +34,7 @@ const showNotEnough = computed(() => (
   !showNotYet.value && (!props.national.totalVotes || parrishCounts.value.length < PARRISH_COUNT)
 ));
 
-const showBigProblem = computed(() => !showNotYet.value && props.nominees.length < NOMINEE_COUNT);
+const showBigProblem = computed(() => (
+  !showNotYet.value && !showNotEnough.value && props.nominees.length < NOMINEE_COUNT
+));
 </script>
