@@ -64,6 +64,7 @@ export type ResultsDTO = {
   nulls: number;
   district: string;
   abstention: number;
+  count: number;
   last_modified: string;
   valids: number;
 };
