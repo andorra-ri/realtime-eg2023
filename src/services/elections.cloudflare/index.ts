@@ -2,7 +2,7 @@ import { indexate } from '/@/utils';
 import type { ElectionsService, Party, List, Results, Historic } from '/@/types';
 import type { PartyDTO, ListDTO, AttachmentDTO, ResultsDTO, HistoricDTO } from './types';
 
-const URL = 'https://eleccions.andorra-ri.workers.dev/api';
+const URL = 'https://andorra-ri.work/api';
 
 const UrlFromAttachment = (
   attachments: AttachmentDTO[] | undefined,
@@ -51,7 +51,7 @@ const getLists = async (): Promise<List[]> => {
 
 const getResults = async (): Promise<Results[]> => {
   const response = await fetch(`${URL}/results`);
-  if (!response.ok) throw new Error('RETRIEVE_RESULTS_ERROR');
+  if (!response.ok) return [];
   const results: ResultsDTO[] = await response.json();
 
   return results.map(result => {
