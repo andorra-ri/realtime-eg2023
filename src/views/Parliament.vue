@@ -12,7 +12,7 @@
       </label>
     </fieldset>
     <NomineesList v-if="showBy === 'nominees'" :nominees="nominees" />
-    <HalfDonut v-else :data="data" />
+    <HalfDonut v-else :data="data" :total="28" />
   </section>
 </template>
 

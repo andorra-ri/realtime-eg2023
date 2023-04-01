@@ -29,10 +29,11 @@ const props = defineProps<{
     value: number,
     color: string;
   }[];
+  total?: number;
 }>();
 
 const items = computed(() => {
-  const total = sum(props.data.map(item => item.value));
+  const total = props.total || sum(props.data.map(item => item.value));
   const { arcs } = props.data.reduce((acc, item) => {
     const rotate = acc.init + rescale(item.value, 0, total, 0, 180);
     acc.arcs.push({ ...item, rotate });
