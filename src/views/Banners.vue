@@ -1,5 +1,5 @@
 <template>
-  <p v-if="showNotYet" class="banner info fixed">
+  <p v-if="showNotYet" class="banner fixed info">
     {{ message('banner.not_yet') }}
   </p>
   <p v-if="showNotEnough" class="banner info fixed bottom">
