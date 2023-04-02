@@ -38,15 +38,10 @@
 </template>
 
 <script setup lang="ts">
-import { useI10n, useResults, useCountdown, useTimer } from '/@/composables';
+import { useI10n, useResults } from '/@/composables';
 import { SuperTrafficLight } from '/@/components';
 import { Parliament, Battleground, Coalitions, MainParties, NewParties, NonValidVotes, Banners } from '/@/views';
-import config from '/@/config.yaml';
 
 const { message, formatDate } = useI10n();
-const { nationalResults, parrishResults, nominees, updateResults, lastUpdate } = useResults();
-
-useTimer(config.START_TIME, () => {
-  useCountdown(config.TIMEOUT, updateResults);
-});
+const { nationalResults, parrishResults, nominees, lastUpdate } = useResults();
 </script>
