@@ -5,10 +5,6 @@
       <h3>{{ message('battlegrounds.territorial.title') }}</h3>
       <p>{{ message('battlegrounds.territorial.caption') }}</p>
       <section class="columns columns--reverse columns--middle">
-        <div>
-          <h3>{{ message('battlegrounds.hotspots.title') }}</h3>
-          <Hotspots :lists="props.territorial.lists" />
-        </div>
         <TerritorialMap
           :lists="props.territorial.lists"
           :countings="props.territorial.countings" />
@@ -29,7 +25,6 @@
 import { useI10n } from '/@/composables';
 import { Expander } from '/@/components';
 import TerritorialMap from './TerritorialMap.vue';
-import Hotspots from './Hotspots.vue';
 import NationalTable from './NationalTable.vue';
 import type { TerritorialResults, NationalResults } from '/@/types';
 
