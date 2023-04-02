@@ -23,6 +23,7 @@ import config from '/@/config.yaml';
 
 const props = defineProps<{
   lists: Record<string, List[]>;
+  countings: Record<string, number>;
 }>();
 
 const { THRESHOLDS } = config.hotspots;
@@ -37,7 +38,10 @@ const hotspots = computed(() => Object.entries(props.lists)
     const emoji = percent < THRESHOLDS.burn ? '🔥' : '🍿';
     return { parrish, percent, margin, emoji };
   })
-  .filter(({ percent, margin }) => !Number.isNaN(margin) && percent < THRESHOLDS.hot)
+  .filter(({ parrish, percent, margin }) => {
+    const counted = props.countings[parrish];
+    return !Number.isNaN(margin) && percent < THRESHOLDS.hot && counted < 1;
+  })
   .sort((a, b) => a.percent - b.percent));
 </script>
 
