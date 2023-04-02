@@ -2,7 +2,7 @@
   <section>
     <div class="counting">
       <div class="percent" :style="`--counting:${props.counting}`">
-        {{ message('counted') }} <strong>{{ Math.round(props.counting * 100) }}%</strong>
+        {{ message('counted') }} <strong>{{ round(props.counting * 100, 2) }}%</strong>
       </div>
       <ConfidenceTrafficLight :counting="props.counting" />
     </div>
@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useI10n } from '/@/composables';
-import { isTie } from '/@/utils';
+import { isTie, round } from '/@/utils';
 import ConfidenceTrafficLight from './ConfidenceTrafficLight.vue';
 import type { List } from '/@/types';
 

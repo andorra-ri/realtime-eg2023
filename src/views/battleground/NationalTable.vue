@@ -1,7 +1,7 @@
 <template>
   <aside>
     <p class="percent" :style="`--counting:${countedNational}`">
-      {{ message('counted') }} <strong>{{ Math.round(countedNational * 100) }}%</strong>
+      {{ message('counted') }} <strong>{{ round(countedNational * 100, 2) }}%</strong>
     </p>
     <p>{{ message('qe') }} <strong>{{ props.results.qe }}</strong></p>
     <ConfidenceTrafficLight :counting="countedNational" />
@@ -48,6 +48,7 @@
 import { ref, computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { ConfidenceTrafficLight } from '/@/components';
+import { round } from '/@/utils';
 import type { NationalResults } from '/@/types';
 
 const props = defineProps<{
