@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "rec0B00LY2gsqw886",
+    "_created": "2023-03-18T12:08:39.000Z",
+    "value": 1.74,
+    "year": 2019,
+    "type": "NULL"
+  },
+  {
+    "_id": "rec3cCsxLyl2Nsw34",
+    "_created": "2023-03-18T12:07:10.000Z",
+    "value": 2.85,
+    "year": 2019,
+    "type": "BLANK"
+  },
+  {
+    "_id": "rec49AoLibE2f4LQS",
+    "_created": "2023-03-18T12:07:00.000Z",
+    "value": 3.23,
+    "year": 2011,
+    "type": "BLANK"
+  },
+  {
+    "_id": "rec65eg3O6zLNiV8l",
+    "_created": "2023-03-18T12:08:31.000Z",
+    "value": 0.89,
+    "year": 2009,
+    "type": "NULL"
+  },
+  {
+    "_id": "rec6R2Izij0eOPs3k",
+    "_created": "2023-03-18T12:04:21.000Z",
+    "value": 3.13,
+    "year": 2009,
+    "type": "BLANK"
+  },
+  {
+    "_id": "rec7hjggdHk7B7wNT",
+    "_created": "2023-03-18T12:08:30.000Z",
+    "value": 0.9,
+    "year": 2005,
+    "type": "NULL"
+  },
+  {
+    "_id": "recCMSVtCLQFHvgGu",
+    "_created": "2023-03-27T12:04:51.000Z",
+    "value": 18.39,
+    "year": 2001,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "recCh1EKKVPsWe1vx",
+    "_created": "2023-03-18T12:04:21.000Z",
+    "value": 4.48,
+    "year": 2001,
+    "type": "BLANK"
+  },
+  {
+    "_id": "recDkxsU7XTrgk7nA",
+    "_created": "2023-03-18T12:08:38.000Z",
+    "value": 1.92,
+    "year": 2015,
+    "type": "NULL"
+  },
+  {
+    "_id": "recDtSl8JMCqwcTE5",
+    "_created": "2023-03-27T12:05:05.000Z",
+    "value": 6.41,
+    "year": 1993,
+    "type": "BLANK"
+  },
+  {
+    "_id": "recFYS6OypEscr4TN",
+    "_created": "2023-03-27T16:31:33.000Z",
+    "value": 31.67,
+    "year": 2019,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "recOfcvZVhieKY7vl",
+    "_created": "2023-03-27T16:27:33.000Z",
+    "value": 1.04,
+    "year": 1997,
+    "type": "NULL"
+  },
+  {
+    "_id": "recRqJGmN9xKNRRGt",
+    "_created": "2023-03-27T16:31:23.000Z",
+    "value": 25.88,
+    "year": 2011,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "recTzijteRLPOZHHh",
+    "_created": "2023-03-18T12:08:31.000Z",
+    "value": 1.01,
+    "year": 2011,
+    "type": "NULL"
+  },
+  {
+    "_id": "recUKavpqYvy5Gg1S",
+    "_created": "2023-03-18T12:07:09.000Z",
+    "value": 6.62,
+    "year": 2015,
+    "type": "BLANK"
+  },
+  {
+    "_id": "recVlqVryxm63RtSq",
+    "_created": "2023-03-18T12:07:13.000Z",
+    "value": 1.27,
+    "year": 2001,
+    "type": "NULL"
+  },
+  {
+    "_id": "recWfu7ZW4SGJLTbO",
+    "_created": "2023-03-27T16:31:28.000Z",
+    "value": 34.38,
+    "year": 2015,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "recXLUQNF3vzZGvf0",
+    "_created": "2023-03-18T12:04:21.000Z",
+    "value": 3,
+    "year": 2005,
+    "type": "BLANK"
+  },
+  {
+    "_id": "recaspiCrbRtARlJs",
+    "_created": "2023-03-27T16:31:14.000Z",
+    "value": 19.62,
+    "year": 2005,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "reccSIe8eTCkr7xmf",
+    "_created": "2023-03-27T16:27:03.000Z",
+    "value": 4.15,
+    "year": 1997,
+    "type": "BLANK"
+  },
+  {
+    "_id": "recj87efjdQK9docZ",
+    "_created": "2023-03-27T16:31:19.000Z",
+    "value": 24.66,
+    "year": 2009,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "recm2aRh40ntvBQqn",
+    "_created": "2023-03-27T16:27:45.000Z",
+    "value": 18.43,
+    "year": 1997,
+    "type": "ABSTENTION"
+  },
+  {
+    "_id": "recoBau0bTLCHUylr",
+    "_created": "2023-03-27T16:26:52.000Z",
+    "value": 1.11,
+    "year": 1993,
+    "type": "NULL"
+  },
+  {
+    "_id": "recokhuTDo8DvpBbG",
+    "_created": "2023-03-27T16:26:58.000Z",
+    "value": 19.08,
+    "year": 1993,
+    "type": "ABSTENTION"
+  }
+]

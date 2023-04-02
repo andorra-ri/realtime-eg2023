@@ -1,5 +1,5 @@
-START_TIME: '2023-04-02T18:00:00Z'
-TIMEOUT: 120000 
+START_TIME: '2023-04-02T17:00:00Z'
+TIMEOUT: 300_000 
 
 CONFIDENCE_LEVELS:
   strong: 0.8
@@ -13,6 +13,6 @@ hotspots:
 
 formats:
   DATE:
-    hour12: false
+    hour12: true
     hour: 2-digit
     minute: 2-digit

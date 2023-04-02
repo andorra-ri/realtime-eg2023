@@ -45,6 +45,7 @@ export type Results = {
   }[];
   blanks: number;
   nulls: number;
+  count: number;
   lastModified: Date;
 };
 

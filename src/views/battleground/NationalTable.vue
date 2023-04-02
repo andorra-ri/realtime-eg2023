@@ -116,7 +116,7 @@ aside {
     em {
       display: block;
       font-weight: bold;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
 
     i {
@@ -135,8 +135,6 @@ aside {
   &__seats {
    border-right: 1px solid #0001;
    background: #fff !important;
-
-    em { font-size: 1.5rem !important; }
   }
 
   &__reminder em,

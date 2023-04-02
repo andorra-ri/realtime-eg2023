@@ -34,11 +34,11 @@ const CENSUS_RATIO: Record<string, number> = {
 const { message } = useI10n();
 
 const bubbles = computed(() => {
-  const { lists, census = 0 } = props.results;
+  const { lists, census = 0, count = 0 } = props.results;
   return [...lists]
     .sort((a, b) => a.order - b.order)
     .map(({ id, name, votes, parties: [{ color }] }) => {
-      const current = round(rescale(votes, 0, census, 0, 100), 2);
+      const current = round(rescale(votes, 0, census * count, 0, 100), 2) || 0;
       const reference = CENSUS_RATIO[id] || 0;
       return { id, name, color, current, reference };
     })

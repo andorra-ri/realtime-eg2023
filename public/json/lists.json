@@ -1,0 +1,1377 @@
+[
+  {
+    "_id": "rec0VLpjPRW2yDCw4",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recjBGz6vXs99ZSGh"
+    ],
+    "nominees": [
+      {
+        "_id": "recbPG1PprmPQDaHI",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Ramon Tena Pera"
+      },
+      {
+        "_id": "recxpUvv6ZxdLVMDN",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Lara De Miguel Barbero"
+      }
+    ],
+    "color": "#21737f",
+    "name": "Concòrdia",
+    "district": [
+      "7_EE"
+    ]
+  },
+  {
+    "_id": "rec29GlXXkvxB78kF",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recnHJwuHoAbWqbzk",
+      "reckiXbAVBIgZzh71"
+    ],
+    "nominees": [
+      {
+        "_id": "recCgROBJPcVqkG3k",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recnHJwuHoAbWqbzk"
+        ],
+        "name": "Carles Naudi D’Areny-Plandolit Balsells"
+      },
+      {
+        "_id": "recjxS6IK4fkR97CM",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "David Montane Amador"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Ciutadans Compromesos + Demòcrates",
+    "district": [
+      "4_LM"
+    ]
+  },
+  {
+    "_id": "rec5ndckdwnntcKcn",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "rec9FQSARgIp0kszW"
+    ],
+    "nominees": [
+      {
+        "_id": "recHl1PToPEpmqi4e",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "David Perez Casas"
+      },
+      {
+        "_id": "recTinBlIZDpXHRH9",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Elisabet Zoppetti Nuñez"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata Progressistes SDP +",
+    "district": [
+      "7_EE"
+    ]
+  },
+  {
+    "_id": "recBqazmfwovNXE0l",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recjBGz6vXs99ZSGh"
+    ],
+    "nominees": [
+      {
+        "_id": "recQqjNWWjd7jVFSK",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Martí Alay Roquet"
+      },
+      {
+        "_id": "recnxHfwayqJuDQ6y",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Miquel Clua Peña"
+      }
+    ],
+    "color": "#21737f",
+    "name": "Concòrdia",
+    "district": [
+      "5_ALV"
+    ]
+  },
+  {
+    "_id": "recEQMEpV19eTugiY",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71",
+      "rech48CVJoc7qCJX3"
+    ],
+    "nominees": [
+      {
+        "_id": "recBqC4q8vxO2OmBU",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Conxita Marsol Riart"
+      },
+      {
+        "_id": "recm1YHcQDv06hXce",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Alain Cabanes Galian"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Demòcrates + Liberals",
+    "district": [
+      "5_ALV"
+    ]
+  },
+  {
+    "_id": "recGgPJ0EcbtyT9k1",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "rec9FQSARgIp0kszW"
+    ],
+    "nominees": [
+      {
+        "_id": "rec6gREjaOLvVzG2T",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Gerard Alis Eroles"
+      },
+      {
+        "_id": "recweCZtXJYdk9oVY",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Josep Roig Càrcel"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata Progressistes SDP +",
+    "district": [
+      "6_SJL"
+    ]
+  },
+  {
+    "_id": "recGm4C2yrXdjticw",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "rec1RrMJClYW10Ysk"
+    ],
+    "nominees": [
+      {
+        "_id": "rec2J5sVAfL3G8h3Q",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Bianca Martínez Poulsen"
+      },
+      {
+        "_id": "recBAt3ceBA4aGdfT",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Marc Ferreiro Toscano"
+      }
+    ],
+    "color": "#4d7397",
+    "name": "Andorra Endavant",
+    "district": [
+      "6_SJL"
+    ]
+  },
+  {
+    "_id": "recJFqscvqla4hWmn",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recjBGz6vXs99ZSGh"
+    ],
+    "order": 3,
+    "nominees": [
+      {
+        "_id": "recmRGkERP7HED50o",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Cerni Escalé Cabré"
+      },
+      {
+        "_id": "recveUcglhq9AsecA",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Núria Segués Daina"
+      },
+      {
+        "_id": "recrhUtgdSpfMuyJG",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Jordi Casadevall Touseil"
+      },
+      {
+        "_id": "recD9UL5bjTutb12s",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Jordi Cantons Palmitjavila"
+      },
+      {
+        "_id": "recsU9EwHNMY9c0bq",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Laura Sallés López"
+      },
+      {
+        "_id": "recxxkXT0QLn4csXt",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Sergi Esteves Lorenzo"
+      },
+      {
+        "_id": "reczYwc3lEX3qOYNc",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Pol Zamora Planelles"
+      },
+      {
+        "_id": "recoxrKM8CTllmdaV",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Meritxell Moya Reigosa"
+      },
+      {
+        "_id": "recnXkKMZNiqWY92w",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Brenda Orobitg Pérez"
+      },
+      {
+        "_id": "recGBG8pBA3momtW2",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Roger Figuerola Vila"
+      },
+      {
+        "_id": "recMmRd8vTaLFBsm6",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Sandra Oliveres Gabarre"
+      },
+      {
+        "_id": "recv4VAX2YNZcHdev",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Jennifer Dobarro Boyer"
+      },
+      {
+        "_id": "rec52Lia90YeL6AA2",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Meritxell Díaz Sànchez"
+      },
+      {
+        "_id": "recLd3AN7Vhboe41o",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Cristian Cerqueda Chilaud"
+      }
+    ],
+    "color": "#21737f",
+    "name": "Concòrdia",
+    "district": [
+      "0_NACIONAL"
+    ]
+  },
+  {
+    "_id": "recJe7rA61BCrgSaa",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "rec9FQSARgIp0kszW"
+    ],
+    "nominees": [
+      {
+        "_id": "recCqjsvLZ9Jau91t",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Joaquim Miro Castillo"
+      },
+      {
+        "_id": "rec8iPEOUPbnwKZOw",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Maria Antonia Sanchiz Rego"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata Progressistes SDP +",
+    "district": [
+      "5_ALV"
+    ]
+  },
+  {
+    "_id": "recJeO0Mu4TSk8SPf",
+    "_created": "2023-03-02T15:02:06.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71",
+      "recnHJwuHoAbWqbzk"
+    ],
+    "order": 6,
+    "nominees": [
+      {
+        "_id": "recvjgVYagERgFh5V",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Xavier Espot Zamora"
+      },
+      {
+        "_id": "rec7G5LHPjqDNDK5u",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Meritxell López Guitart"
+      },
+      {
+        "_id": "recQxe2PgVGI81Dd9",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Carles Enseñat Reig"
+      },
+      {
+        "_id": "reczE6fskckNvQQyP",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recnHJwuHoAbWqbzk"
+        ],
+        "name": "Raül Ferré Bonet"
+      },
+      {
+        "_id": "recELrio4i9nKUZkk",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Carol Puig Montés"
+      },
+      {
+        "_id": "recH4GDknaMua4JsT",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Gemma Riba Casal"
+      },
+      {
+        "_id": "rec089uI6sKthxnw5",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Mònica Bonell Tuset"
+      },
+      {
+        "_id": "recIkD208caCloeDA",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Manel Linares Folgueiras"
+      },
+      {
+        "_id": "recLwvtAkuKohFi2i",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Xavier Sopena González"
+      },
+      {
+        "_id": "recn9yInU0aOww4Z7",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Erica Armengol Soldevila"
+      },
+      {
+        "_id": "recjzyk08PXeuu7Fm",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Montserrat Capdevila Pallarés"
+      },
+      {
+        "_id": "recnyGbuRDCJ4qvIk",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Antoni Lopez Leal"
+      },
+      {
+        "_id": "rec8UIUONmzTo1CxL",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Nuria Rossell Jordana"
+      },
+      {
+        "_id": "recy97ZdI1XRMWj1b",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Joan Martínez Benazet"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Demòcrates + CC + ACO + UP + Independents",
+    "district": [
+      "0_NACIONAL"
+    ]
+  },
+  {
+    "_id": "recOsly6lLoKoBbEr",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "rec1RrMJClYW10Ysk"
+    ],
+    "nominees": [
+      {
+        "_id": "recWpeTHArKx9yEPk",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Elisa Muxella Molins"
+      },
+      {
+        "_id": "recOsfiU4DTPk2cKT",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Didac Tomas Invernon"
+      }
+    ],
+    "color": "#4d7397",
+    "name": "Andorra Endavant",
+    "district": [
+      "5_ALV"
+    ]
+  },
+  {
+    "_id": "recPW2138OYL6kckJ",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "rec9FQSARgIp0kszW"
+    ],
+    "nominees": [
+      {
+        "_id": "recsVkNSYjbr2Xcn6",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Michel Moliné Nadal"
+      },
+      {
+        "_id": "recY6FrSxkAU2CA24",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Francisco Lizama Vilches"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata Progressistes SDP +",
+    "district": [
+      "4_LM"
+    ]
+  },
+  {
+    "_id": "recUpCyxtyCeBen2H",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "rec4zWgzN41xMZak8"
+    ],
+    "nominees": [
+      {
+        "_id": "recssEAt0a848omq4",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Joan Miquel Armengol Petit"
+      },
+      {
+        "_id": "recK2e2sgmBZKW6pR",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec4zWgzN41xMZak8"
+        ],
+        "name": "Pere Mas Suñé"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata + Per Ordino",
+    "district": [
+      "3_ORD"
+    ]
+  },
+  {
+    "_id": "recUvJudzNRNFgSRm",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71",
+      "recCQIQWW0bOVuttp"
+    ],
+    "nominees": [
+      {
+        "_id": "reckrDy6nK0eRE3wH",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Trinitat Marin Gonzalez"
+      },
+      {
+        "_id": "recRKsG2ZtI9EF8iM",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Marc Magallón Font"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Demòcrates + Acció + Independents",
+    "district": [
+      "7_EE"
+    ]
+  },
+  {
+    "_id": "recVi8I4tKcOL195J",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "rec1RrMJClYW10Ysk"
+    ],
+    "order": 2,
+    "nominees": [
+      {
+        "_id": "recNRwvGLVCa8qlAf",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Carine Montaner Raynaud"
+      },
+      {
+        "_id": "recgvoeFKcqKNMkXc",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Noemi Amador Perez"
+      },
+      {
+        "_id": "recvuGPvEijdrC2QS",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Marcos Monteagudo Torres"
+      },
+      {
+        "_id": "rectof3HntzofkYFc",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Verònica Manela Fernandes Gonçalves"
+      },
+      {
+        "_id": "recBZPdNFbGlJZuKX",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Antonio Martinez Gomez"
+      },
+      {
+        "_id": "recKoAWE8brNdXHse",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Isabel Orobitg Carrillo"
+      },
+      {
+        "_id": "recC60ErxDP9K5v2W",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Marta Regina Lourenço Ferreira "
+      },
+      {
+        "_id": "recHXmZZTENhVdEut",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Gerard Buenache Terrones"
+      },
+      {
+        "_id": "recMcdYKsjLEP4vUK",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Silene Caldas Fernandes"
+      },
+      {
+        "_id": "recG4sz5oYrhslSzx",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Marcel Bellosta Nadal"
+      },
+      {
+        "_id": "recy1FRZwDPDNdzKv",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Victor Manel Martín Garrido"
+      },
+      {
+        "_id": "recWW3CW0hRnFkLnN",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Nathalie Myrielle Danielle Bernard Vanhollebeke"
+      },
+      {
+        "_id": "recNFawcVsw8R8WbB",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Patrick Maurel Salabert"
+      },
+      {
+        "_id": "rec05uwArh125nP2o",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Arantxa Bueno Bernal"
+      }
+    ],
+    "color": "#4d7397",
+    "name": "Andorra Endavant",
+    "district": [
+      "0_NACIONAL"
+    ]
+  },
+  {
+    "_id": "recX9CRRFH9yLkBFR",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "rec9FQSARgIp0kszW"
+    ],
+    "order": 1,
+    "nominees": [
+      {
+        "_id": "recZriMPkJJ0aQOLS",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Pere Lopez Agras"
+      },
+      {
+        "_id": "recENdOkCcJVa6Pwg",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Judith Salazar Alvarez"
+      },
+      {
+        "_id": "rec7PeybFnRr4HNqT",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Susagna Vela Palomares"
+      },
+      {
+        "_id": "reccS7HmhcTDpCOTg",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Pere Baro Rocamonde"
+      },
+      {
+        "_id": "recs0SDURpJukU5Vp",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Laia Moline Cintas"
+      },
+      {
+        "_id": "recRL3F3o8NeZOYZY",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Maria del Carme Garcia Oliva"
+      },
+      {
+        "_id": "recTyyBMXv23HD2mv",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Aaron Comella Servet"
+      },
+      {
+        "_id": "recKXoOcYAE7og4Jn",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Tomas Riart Escriba"
+      },
+      {
+        "_id": "recGMrJXlguKQ0kAt",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Joao Ricardo de Melo Barros Queiros"
+      },
+      {
+        "_id": "recEsyt69oIm5Sqzj",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Alain Mateu Montane"
+      },
+      {
+        "_id": "recLhEZHw8weulViQ",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Rosa Maria Perez Martin"
+      },
+      {
+        "_id": "recbffZvekcIkL9lE",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Laura Perez Pantebre"
+      },
+      {
+        "_id": "rec823mmoI0llRN90",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec9FQSARgIp0kszW"
+        ],
+        "name": "Maria de la O Soto Simon"
+      },
+      {
+        "_id": "rec4br1NK0cGnqwdF",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Jordi Font Mariné"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata Progressistes SDP +",
+    "district": [
+      "0_NACIONAL"
+    ]
+  },
+  {
+    "_id": "reca2Qzjta3qg5qkG",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recCQIQWW0bOVuttp"
+    ],
+    "order": 4,
+    "nominees": [
+      {
+        "_id": "recwcIlxJ39zbnNhc",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Judith Pallarés Cortes"
+      },
+      {
+        "_id": "recFwxYCI6HlnxSJ5",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Noelia Souque Caldato"
+      },
+      {
+        "_id": "recFnt5Yzt7lcgxP0",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Agustina Grandvallet Ortega"
+      },
+      {
+        "_id": "recSatDYU8uROgHEQ",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Carles César Bernardo Salgado"
+      },
+      {
+        "_id": "recrNaO52nfNiva4H",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Abdou Taouil Taouil"
+      },
+      {
+        "_id": "reciZBvp4XzabxZTt",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Vladimir Martins Dos Santos"
+      },
+      {
+        "_id": "recdy5Bw7tJnRpHfp",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Celia Montalvo Sánchez"
+      },
+      {
+        "_id": "recxzBy7cR7WebcjF",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Josep Anton Albós Melción"
+      },
+      {
+        "_id": "recxmVzgirh1HIGcp",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Vicente Zapata Dos Santos"
+      },
+      {
+        "_id": "rec8YEnvf714FKKIU",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Blanca Montoro Muñoz"
+      },
+      {
+        "_id": "recUCN0GO1RqvOmXP",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Jordi Moreno Magallon"
+      },
+      {
+        "_id": "recvdpRMAmZ7FvBBQ",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Yael Caramés Oziel"
+      },
+      {
+        "_id": "rec94pd41O8v0DLa8",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Josep Estefanell Miro"
+      },
+      {
+        "_id": "rec80G5bcjDQqjY3P",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Cristina Ribas Díez"
+      }
+    ],
+    "color": "#72c0c0",
+    "name": "Acció",
+    "district": [
+      "0_NACIONAL"
+    ]
+  },
+  {
+    "_id": "recbodeJQrjUPKiNU",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71",
+      "rech48CVJoc7qCJX3"
+    ],
+    "nominees": [
+      {
+        "_id": "recqe2xGrpImnCjFB",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Helena Mas Santuré"
+      },
+      {
+        "_id": "rect4Clqkikg7b1c7",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Eva París López"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Demòcrates + Liberals + Independents",
+    "district": [
+      "6_SJL"
+    ]
+  },
+  {
+    "_id": "reciZPMzJRNPWFtkm",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "rec1RrMJClYW10Ysk"
+    ],
+    "nominees": [
+      {
+        "_id": "recvdKSOv6U6zUvQ7",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Jordina Bringué Alonso"
+      },
+      {
+        "_id": "recTirqcskDMXVIqQ",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rec1RrMJClYW10Ysk"
+        ],
+        "name": "Eva Font Denjean"
+      }
+    ],
+    "color": "#4d7397",
+    "name": "Andorra Endavant",
+    "district": [
+      "3_ORD"
+    ]
+  },
+  {
+    "_id": "reckf2p3g2kcsJ4IZ",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "rech48CVJoc7qCJX3"
+    ],
+    "order": 5,
+    "nominees": [
+      {
+        "_id": "reckLaBFz9smh7RLn",
+        "_created": "2023-02-02T13:56:49.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Josep Maria Cabanes Dalmau"
+      },
+      {
+        "_id": "recIXhpS8qfQSMmc3",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Maria Isabel Lafoz Jodar"
+      },
+      {
+        "_id": "rec6ScKXTSrQIjX4v",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Jaume Bonell Argelich"
+      },
+      {
+        "_id": "recMmRuWM6g0yC1ud",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Pere Cerqueda Gispert"
+      },
+      {
+        "_id": "recMoSrjcxMTBvpvk",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Josep Pubill Armengol"
+      },
+      {
+        "_id": "rec1KA2uTeoByxBWf",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Cristina Rico Flor"
+      },
+      {
+        "_id": "recaWUh5oXVSQbKAZ",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Xavier de la Rosa Fernandez"
+      },
+      {
+        "_id": "recygCHifwOQPlEIq",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Elsa Gonzalez Fernandez"
+      },
+      {
+        "_id": "recvaGQZYSJESAQ3h",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Jordi Troguet Ribes"
+      },
+      {
+        "_id": "rec0OWkivpHhIftD0",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Mireia Martí Santolaria"
+      },
+      {
+        "_id": "recrfBOkELcWEeBKJ",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Noèlia Dobarro Perez"
+      },
+      {
+        "_id": "recvJwDWiq3mfI5Ox",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Sandra Mirouse Velasco"
+      },
+      {
+        "_id": "recgJ1FYX1yHFFQY1",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Àlex Vilagrasa Noguera"
+      },
+      {
+        "_id": "recjghEJcxPNFqpzM",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "rech48CVJoc7qCJX3"
+        ],
+        "name": "Josep Maria Bernaus Cano"
+      }
+    ],
+    "color": "#009dc5",
+    "name": "Liberals d'Andorra",
+    "district": [
+      "0_NACIONAL"
+    ]
+  },
+  {
+    "_id": "recpZRAwTHN56Sno1",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71",
+      "rech48CVJoc7qCJX3"
+    ],
+    "nominees": [
+      {
+        "_id": "recRh2JCox82DhJJ2",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Berna Coma González"
+      },
+      {
+        "_id": "reccQNShjt7CSmHNE",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Sandra Codina Tort"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Acció Comunal d'Ordino + Demòcrates + Liberals",
+    "district": [
+      "3_ORD"
+    ]
+  },
+  {
+    "_id": "recq1huYYFiVSUvlO",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recoUh1nGSEpi8li7",
+      "recHkhWnZYQ6awTa2"
+    ],
+    "nominees": [
+      {
+        "_id": "recHEVrRmwbq21RKe",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recoUh1nGSEpi8li7"
+        ],
+        "name": "Marta Pujol"
+      },
+      {
+        "_id": "rec1KSddpDGH4EjE9",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recHkhWnZYQ6awTa2"
+        ],
+        "name": "Susagna Venable"
+      }
+    ],
+    "color": "#e30614",
+    "name": "Partit Socialdemòcrata + Agrupament Encampadà",
+    "district": [
+      "2_ENC"
+    ]
+  },
+  {
+    "_id": "recslIrVrRRx8AuDM",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recjBGz6vXs99ZSGh"
+    ],
+    "nominees": [
+      {
+        "_id": "rec45UFV0wbxfkpUV",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Pol Bartolomé Areny"
+      },
+      {
+        "_id": "recpcKAWyojdYf3y5",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recjBGz6vXs99ZSGh"
+        ],
+        "name": "Maria Àngela Aché Feliu"
+      }
+    ],
+    "color": "#21737f",
+    "name": "Concòrdia + Desperta Laurèdia",
+    "district": [
+      "6_SJL"
+    ]
+  },
+  {
+    "_id": "rectdl10pE4GfFAYk",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "recCQIQWW0bOVuttp"
+    ],
+    "nominees": [
+      {
+        "_id": "recJUZ8cXMYdJ44IT",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Josep Fusté Badana"
+      },
+      {
+        "_id": "reclt8T2vZ98AB5yT",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "recCQIQWW0bOVuttp"
+        ],
+        "name": "Rebeca Roger Lozano"
+      }
+    ],
+    "color": "#72c0c0",
+    "name": "Acció + Independents",
+    "district": [
+      "4_LM"
+    ]
+  },
+  {
+    "_id": "recuZj5NleyPBOwFS",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71"
+    ],
+    "nominees": [
+      {
+        "_id": "recgnED7MGlXduc7L",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Guillem Casal Font"
+      },
+      {
+        "_id": "rec9zgqRzQLtqgCbB",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Jordi Jordana Rossell"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Demòcrates + Independents",
+    "district": [
+      "1_CAN"
+    ]
+  },
+  {
+    "_id": "recx8UlOslG8DMFjd",
+    "_created": "2023-03-02T15:02:09.000Z",
+    "parties": [
+      "reckiXbAVBIgZzh71"
+    ],
+    "nominees": [
+      {
+        "_id": "recl02lwIOfZ8vTOC",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Jordi Torres Falcó"
+      },
+      {
+        "_id": "rechNzamqNO1EqaKK",
+        "_created": "2023-03-02T14:55:32.000Z",
+        "party": [
+          "reckiXbAVBIgZzh71"
+        ],
+        "name": "Maria Martisella Gonzalez"
+      }
+    ],
+    "color": "#f08108",
+    "name": "Units per al Progrés + Demòcrates + Independents",
+    "district": [
+      "2_ENC"
+    ]
+  }
+]

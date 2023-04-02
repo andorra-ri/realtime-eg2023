@@ -1,8 +1,7 @@
 .banner {
   background: #f0f0f0;
-  padding: 2rem;
-  max-width: 80vw;
-  margin: 0 auto;
+  padding: 1rem;
+  margin: 0;
   border: 1px solid #e0e0e0;
   z-index: 3;
 
@@ -10,13 +9,24 @@
     background: #cae9ff;
     color: #003566;
     border-color: #00356644;
+  }
 
+  &.warning {
+    background: #f5bd01;
+    color: #6e622a;
+    border: none;
   }
 
   &.fixed {
     position: fixed;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);;
+    min-width: 70vw;
+    transform: translate(-50%, 50%);
+  }
+
+  &.fixed.bottom {
+    bottom: 2rem;
+    transform: translateX(-50%)
   }
 }

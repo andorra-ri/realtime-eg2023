@@ -26,7 +26,7 @@ parrishes:
   EE: Escaldes-Engordany
 
 confidence:
-  title: "Nivell de confiança dels resultats amb l'estat actual d'avançament de l'escrutini:"
+  title: "Nivell de confiança de les projeccions en escons dels resultats en funció del percentatge del vot escrutat i del nivell de la distància entre llistes a les circumscripcions territorials"
   insufficient: Insuficient
   weak: Fiabilitat Feble
   consolidated: Fiabilitat Mitjana
@@ -54,9 +54,9 @@ battlegrounds:
 
 coalitions:
   title: Qui té més opcions de governar? 
-  caption1: Demòcrates i PS SDP + partien com les dues úniques forces amb possibilitats d’acostar-se a la majoria absoluta dels escons i, per tant, de liderar el futur Govern.
-  caption2: Aconseguirà Demòcrates superar el desgast de 12 anys al Govern i d’una legislatura duríssima? Aconseguiran els socialdemòcrates capitalitzar els vots dels desencantats i sumar prou com per esdevenir una alternativa? Quant poden aportar la resta de forces polítiques?
-  instructions: Us mostrem quant s’acosta a la majoria cadascuna de les coalicions creades al voltant dels dos aspirants al govern i us permetem jugar amb un generador de pactes per veure quant pot sumar cada combinació.
+  caption1: Demòcrates i PS SDP +, partien com les dues forces forces amb més possibilitats d'acostar-se a la majoria absoluta dels escons i, per tant, de liderar el futur Govern.
+  caption2: Aconseguirà Demòcrates superar el desgast de 12 anys al Govern? Aconseguiran els socialdemòcrates capitalitzar el vot crític i erigir-se com a alternativa de govern? Algun dels nous partits aconseguirà sumar prou com per poder ser una tercera alternativa?
+  instructions: Us mostrem quant s'acosta a la majoria cadascuna de les coalicions creades al voltant dels dos aspirants principals al Govern dels darrers tres comicis i us permetem jugar amb un generador de pactes per veure quant pot sumar cada combinació possible de forces.
 
   left_right:
     title: PS SDP + {vs} Demòcrates
@@ -66,7 +66,7 @@ coalitions:
 
 analysis:
   title: Com ha evolucionat el suport als partits en relació a les EG2019?
-  caption: Ens preguntem, aquí, en quina mesura els partits han estat capaços de conservar o ampliar el suport que havien rebut l’any 2019. Ho mesurem comparant el percentatge de vots obtinguts en relació al cens electoral.
+  caption: En quina mesura els partits han estat capaços de conservar o ampliar el suport que havien rebut l’any 2019? Ho mesurem comparant el percentatge de vots obtinguts en relació al cens electoral.
 
   new_parties:
     title: Entraran els partits nous?
@@ -88,7 +88,7 @@ credits:
   data: "Font de les dades brutes: Govern d'Andorra."
   analysis: "Model d'anàlisi i desenvolupament: Andorra Recerca + Innovació. Més informació a "
 
-disclaimer: "Les dades que oferim en aquest lloc web són, en alguns casos, dades oficials, en d’altres casos, projeccions a partir de dades oficials i, en el cas de la distribució de vots entre les forces liberals, una projecció a partir d’escenaris probables basats en l’anàlisi de resultats i de programes electorals. Els resultats oficials en vots absoluts els podeu trobar al web " 
+disclaimer: "Les dades que oferim en aquest lloc web són, en alguns casos, dades oficials, en d’altres casos, projeccions a partir de dades oficials." 
 
 errors:
   RETRIEVE_LISTS_ERROR: S'ha produït un error en carregar les llistes, torna-ho a intentar en breu
@@ -97,3 +97,5 @@ errors:
 
 banner:
   not_yet: Encara no hi ha dades públiques de l'escrutini. Us oferirem resultats tan bon punt estiguin disponibles. Ja falta menys... 🍿🍿🍿
+  not_enough: Ja ha començat l'escrutini però encara no disposem de dades de totes les circumscripcions.
+  big_problem: "No s'han pogut assignar els 28 consellers perquè s'ha produït un empat en alguna parròquia o perquè s'ha donat una combinació de resultats a la circumscripció nacional que no permet assignar els escons en joc." 

@@ -31,24 +31,20 @@
     <p>2023 &copy; Andorra Recerca + Innovació</p>
   </footer>
   <ToastCenter />
-  <p v-if="showNotYetBanner" class="banner info fixed">{{ message('banner.not_yet') }}</p>
+  <Banners
+    :national="nationalResults"
+    :territorial="parrishResults"
+    :nominees="nominees" />
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
 import { useI10n, useResults, useCountdown, useTimer } from '/@/composables';
 import { SuperTrafficLight } from '/@/components';
-import { Parliament, Battleground, Coalitions, MainParties, NewParties, NonValidVotes } from '/@/views';
+import { Parliament, Battleground, Coalitions, MainParties, NewParties, NonValidVotes, Banners } from '/@/views';
 import config from '/@/config.yaml';
 
 const { message, formatDate } = useI10n();
 const { nationalResults, parrishResults, nominees, updateResults, lastUpdate } = useResults();
-
-const showNotYetBanner = computed(() => {
-  const parrishCounting = Object.values(parrishResults.value.countings).filter(Boolean).length;
-  const nationalCounting = nationalResults.value.totalVotes;
-  return !nationalCounting && !parrishCounting;
-});
 
 useTimer(config.START_TIME, () => {
   useCountdown(config.TIMEOUT, updateResults);

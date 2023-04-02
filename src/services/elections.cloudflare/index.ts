@@ -1,17 +1,8 @@
 import { indexate } from '/@/utils';
 import type { ElectionsService, Party, List, Results, Historic } from '/@/types';
-import type { PartyDTO, ListDTO, AttachmentDTO, ResultsDTO, HistoricDTO } from './types';
+import type { PartyDTO, ListDTO, ResultsDTO, HistoricDTO } from './types';
 
-const URL = 'https://eleccions.andorra-ri.workers.dev/api';
-
-const UrlFromAttachment = (
-  attachments: AttachmentDTO[] | undefined,
-  thumbnail?: 'small' | 'large' | 'full',
-): string | undefined => {
-  const [attachment] = attachments || [];
-  if (!attachment) return undefined;
-  return thumbnail ? attachment.thumbnails[thumbnail].url : attachment.url;
-};
+const URL = 'https://andorra-ri.work/api';
 
 const adaptParty = (party: PartyDTO): Party => {
   const {
@@ -20,7 +11,7 @@ const adaptParty = (party: PartyDTO): Party => {
     coalition_name: coalitionName,
     ...rest
   } = party;
-  const logo = UrlFromAttachment(party.logo);
+  const logo = `/images/parties/${id}.png`;
   return { id, ...rest, logo, coalitionLeaderId, coalitionName };
 };
 
@@ -42,7 +33,7 @@ const getLists = async (): Promise<List[]> => {
       parties: list.parties.map(partyId => partiesDict[partyId]),
       nominees: list.nominees.map(nominee => {
         const party = partiesDict[nominee.party[0]];
-        const photo = UrlFromAttachment(nominee.photo);
+        const photo = `/images/nominees/${nominee._id}.jpg`; // eslint-disable-line no-underscore-dangle
         return { ...nominee, party, photo };
       }),
     };
@@ -51,7 +42,7 @@ const getLists = async (): Promise<List[]> => {
 
 const getResults = async (): Promise<Results[]> => {
   const response = await fetch(`${URL}/results`);
-  if (!response.ok) throw new Error('RETRIEVE_RESULTS_ERROR');
+  if (!response.ok) return [];
   const results: ResultsDTO[] = await response.json();
 
   return results.map(result => {

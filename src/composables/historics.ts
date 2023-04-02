@@ -1,10 +1,10 @@
 import { computed } from 'vue';
-import { apiService } from '/@/services';
+import { jsonService } from '/@/services';
 import { useApi } from './api';
 import type { Historic } from '/@/types';
 
 export const useHistorics = () => {
-  const { items, loading } = useApi<Historic[]>(apiService.getHistorics, []);
+  const { items, loading } = useApi<Historic[]>(jsonService.getHistorics, []);
 
   const nulls = computed(() => items.value.filter(({ type }) => type === 'NULL'));
   const blanks = computed(() => items.value.filter(({ type }) => type === 'BLANK'));
