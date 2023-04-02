@@ -1,33 +1,27 @@
 <template>
   <div class="bubble">
-    <div class="projection">
-      <span>
-        <em>{{ props.reference }}%</em>
-        <small>EG2019</small>
-      </span>
-    </div>
-    <em>{{ label }}%</em>
+    <div class="projection" />
+    <em>{{ label }}</em>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { round } from '/@/utils';
 
-const MAX_VALUE = 50;
 const MAX_DIAMETER = 200;
 
 const props = defineProps<{
   current: number;
   reference: number;
   color: string;
+  max: number;
 }>();
 
-const current = computed(() => MAX_DIAMETER * Math.sqrt(props.current / MAX_VALUE));
-const reference = computed(() => MAX_DIAMETER * Math.sqrt(props.reference / MAX_VALUE));
+const current = computed(() => MAX_DIAMETER * Math.sqrt(props.current / props.max));
+const reference = computed(() => MAX_DIAMETER * Math.sqrt(props.reference / props.max));
 const label = computed(() => {
   const formatter = new Intl.NumberFormat('ca', { signDisplay: 'exceptZero' });
-  return formatter.format(round(props.current - props.reference, 2));
+  return formatter.format(props.current - props.reference);
 });
 
 </script>

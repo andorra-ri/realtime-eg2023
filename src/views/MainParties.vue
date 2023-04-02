@@ -8,6 +8,7 @@
           :color="bubble.color"
           :current="bubble.current"
           :reference="bubble.reference"
+          :max="maxVotes"
           class="bubbles__bubble" />
         <em class="bubbles__name">{{ bubble.name }}</em>
       </article>
@@ -19,31 +20,35 @@
 import { computed } from 'vue';
 import { useI10n } from '/@/composables';
 import { VotesBubble } from '/@/components';
-import { round, rescale } from '/@/utils';
 import type { NationalResults } from '/@/types';
 
 const props = defineProps<{
   results: NationalResults;
 }>();
 
-const CENSUS_RATIO: Record<string, number> = {
-  recJeO0Mu4TSk8SPf: 23.02, // DA
-  recX9CRRFH9yLkBFR: 23.79, // PS + SDP
+const OLD_VOTES: Record<string, number> = {
+  recJeO0Mu4TSk8SPf: 6860, // DA
+  recX9CRRFH9yLkBFR: 7083, // PS + SDP
 };
 
 const { message } = useI10n();
 
 const bubbles = computed(() => {
-  const { lists, census = 0, count = 0 } = props.results;
+  const { lists } = props.results;
   return [...lists]
     .sort((a, b) => a.order - b.order)
     .map(({ id, name, votes, parties: [{ color }] }) => {
-      const current = round(rescale(votes, 0, census * count, 0, 100), 2) || 0;
-      const reference = CENSUS_RATIO[id] || 0;
+      const current = votes || 0;
+      const reference = OLD_VOTES[id] || 0;
       return { id, name, color, current, reference };
     })
     .filter(bubble => bubble.reference);
 });
+
+const maxVotes = computed(() => Math.max(
+  ...Object.values(OLD_VOTES),
+  ...bubbles.value.map(bubble => bubble.current),
+));
 </script>
 
 <style lang="scss" scoped>
