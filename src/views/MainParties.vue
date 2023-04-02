@@ -38,7 +38,7 @@ const bubbles = computed(() => {
   return [...lists]
     .sort((a, b) => a.order - b.order)
     .map(({ id, name, votes, parties: [{ color }] }) => {
-      const current = round(rescale(votes, 0, census * count, 0, 100), 2);
+      const current = round(rescale(votes, 0, census * count, 0, 100), 2) || 0;
       const reference = CENSUS_RATIO[id] || 0;
       return { id, name, color, current, reference };
     })
