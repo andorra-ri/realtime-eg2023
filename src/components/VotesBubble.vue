@@ -1,12 +1,13 @@
 <template>
   <div class="bubble">
     <div class="projection" />
-    <em>{{ label }}</em>
+    <em>{{ label }} {{ message('votes') }}</em>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { useI10n } from '/@/composables';
 
 const MAX_DIAMETER = 200;
 
@@ -16,6 +17,8 @@ const props = defineProps<{
   color: string;
   max: number;
 }>();
+
+const { message } = useI10n();
 
 const current = computed(() => MAX_DIAMETER * Math.sqrt(props.current / props.max));
 const reference = computed(() => MAX_DIAMETER * Math.sqrt(props.reference / props.max));
