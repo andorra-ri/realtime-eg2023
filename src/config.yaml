@@ -13,6 +13,6 @@ hotspots:
 
 formats:
   DATE:
-    hour12: false
+    hour12: true
     hour: 2-digit
     minute: 2-digit
