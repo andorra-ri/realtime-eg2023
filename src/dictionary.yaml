@@ -66,7 +66,7 @@ coalitions:
 
 analysis:
   title: Com ha evolucionat el suport als partits en relació a les EG2019?
-  caption: En quina mesura els partits han estat capaços de conservar o ampliar el suport que havien rebut l’any 2019? Ho mesurem comparant els vots obtinguts el 2023 en relació als vots del 2019 majorat amb l'augment del cens electoral..
+  caption: En quina mesura els partits han estat capaços de conservar o ampliar el suport que havien rebut l’any 2019? Ho mesurem comparant els vots obtinguts el 2023 en relació als vots del 2019 corregit amb l'augment del cens electoral..
 
   new_parties:
     title: Entraran els partits nous?
