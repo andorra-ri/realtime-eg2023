@@ -44,6 +44,7 @@ const getLists = async (): Promise<List[]> => {
 
 const getResults = async (): Promise<Results[]> => {
   const response = await fetch('/json/results.json');
+  if (!response.ok) return [];
   const results: ResultsDTO[] = await response.json();
 
   return results.map(result => {

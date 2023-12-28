@@ -1,5 +1,5 @@
 import { computed } from 'vue';
-import { apiService } from '/@/services';
+import { jsonService } from '/@/services';
 import { groupBy, sum, max, isTie } from '/@/utils';
 import { useApi } from './api';
 import { useLists } from './lists';
@@ -40,7 +40,7 @@ export const useResults = () => {
     items: results,
     loadItems: updateResults,
     loading,
-  } = useApi<Results[]>(apiService.getResults, []);
+  } = useApi<Results[]>(jsonService.getResults, []);
 
   const parrishResults = computed<TerritorialResults>(() => {
     const parrishes = results.value.filter(result => result.district !== 'NACIONAL');
